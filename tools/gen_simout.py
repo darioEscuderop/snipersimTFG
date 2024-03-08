@@ -178,6 +178,13 @@ def generate_simout(jobid = None, resultsdir = None, partial = None, output = sy
       line += [''] * ncores
     lines.append(line)
 
+    #Siempre que tfg.dario.conteo_uso_pagina este a true en config
+    if config['tfg.dario.conteo_uso_pagina'] == 'true':
+      lines.append(['Total accesses' , str(stats['tfg_dario.total_accesses'])])
+      lines.append(['Total use' , str(stats['tfg_dario.total_use'])])
+      lines.append(['Average accesses' , str(stats['tfg_dario.avg_accesses'])])
+      lines.append(['Average use' , str(stats['tfg_dario.avg_use'])])
+
 
   widths = [ max(10, max([ len(l[i]) for l in lines ])) for i in range(len(lines[0])) ]
   for j, line in enumerate(lines):

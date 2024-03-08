@@ -16,6 +16,7 @@ TLB::TLB(String name, String cfgname, core_id_t core_id, UInt32 num_entries, UIn
 
    registerStatsMetric(name, core_id, "access", &m_access);
    registerStatsMetric(name, core_id, "miss", &m_miss);
+   pageStats = PageStats(Sim()->getCfg()->getBool("tfg/dario/conteo_uso_paginas"););
 }
 
 bool
@@ -24,9 +25,14 @@ TLB::lookup(IntPtr address, SubsecondTime now, bool allocate_on_miss)
    bool hit = m_cache.accessSingleLine(address, Cache::LOAD, NULL, 0, now, true);
 
    m_access++;
+   //De momento solo buscamos el saber cuantas veces se accede a una pagina y a sus words para sacar un promedio
+   //Si está en la configuración hacer, si no, no hacer nada
 
-   if (hit)
+   pageStats.updatePageStats(address);
+
+   if (hit){
       return true;
+   }
 
    m_miss++;
 
@@ -52,8 +58,10 @@ TLB::allocate(IntPtr address, SubsecondTime now)
    m_cache.insertSingleLine(address, NULL, &eviction, &evict_addr, &evict_block_info, NULL, now);
 
    // Use next level as a victim cache
-   if (eviction && m_next_level)
+   if (eviction && m_next_level){
+  //    pageStats.updatePageStats(address, true);
       m_next_level->allocate(evict_addr, now);
+   }
 }
 
 }

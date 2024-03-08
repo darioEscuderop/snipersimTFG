@@ -3,6 +3,7 @@
 
 #include "fixed_types.h"
 #include "cache.h"
+#include "page_stats.h"
 
 namespace ParametricDramDirectoryMSI
 {
@@ -20,6 +21,8 @@ namespace ParametricDramDirectoryMSI
          TLB *m_next_level;
 
          UInt64 m_access, m_miss;
+
+         PageStats pageStats;
       public:
          TLB(String name, String cfgname, core_id_t core_id, UInt32 num_entries, UInt32 associativity, TLB *next_level);
          bool lookup(IntPtr address, SubsecondTime now, bool allocate_on_miss = true);
