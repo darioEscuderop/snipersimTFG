@@ -25,7 +25,7 @@ PageStats::PageStats(bool ejec, core_id_t core_id) : totalPages(0), minUsage(0),
 
 }
 
-void PageStats::updatePageStats(int pageAddress, bool evictedPage = false) {
+void PageStats::updatePageStats(int pageAddress, bool evictedPage) {
     if(!ejecucion) return;
     
     if(evictedPage){
