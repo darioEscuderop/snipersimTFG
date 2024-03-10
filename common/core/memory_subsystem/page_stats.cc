@@ -27,7 +27,7 @@ PageStats::PageStats(bool ejec, core_id_t core_id) : totalPages(0), minUsage(0),
 
 }
 
-void PageStats::updatePageStats(int pageAddress, bool evictedPage) {
+void PageStats::updatePageStats(IntPtr pageAddress, bool evictedPage) {
     if(!ejecucion) return;
     
     if(evictedPage){
@@ -52,7 +52,7 @@ void PageStats::updatePageStats(int pageAddress, bool evictedPage) {
     
 }
 
-void PageStats::evictPage(int pageAddress) {
+void PageStats::evictPage(IntPtr pageAddress) {
     // Convertir la dirección de la página en un número de página
     int page = pageAddress / PAGE_SIZE;
 
