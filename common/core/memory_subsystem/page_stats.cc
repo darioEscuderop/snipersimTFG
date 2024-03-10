@@ -17,11 +17,11 @@ PageStats::PageStats(bool ejec) : totalPages(0), minUsage(0), maxUsage(0) {
     totalUse = 0;
     totalAccesses = 0;
 
-    registerStatsMetric("tfg_dario", core->getId(), "total_pages", &totalPages);
-    registerStatsMetric("tfg_dario", core->getId(), "min_usage", &minUsage);
-    registerStatsMetric("tfg_dario", core->getId(), "max_usage", &maxUsage);
-    registerStatsMetric("tfg_dario", core->getId(), "total_use", &totalUse);
-    registerStatsMetric("tfg_dario", core->getId(), "total_accesses", &totalAccesses);
+    registerStatsMetric("tfg_dario", getCore()->getId(), "total_pages", &totalPages);
+    registerStatsMetric("tfg_dario", getCore()->getId(), "min_usage", &minUsage);
+    registerStatsMetric("tfg_dario", getCore()->getId(), "max_usage", &maxUsage);
+    registerStatsMetric("tfg_dario", getCore()->getId(), "total_use", &totalUse);
+    registerStatsMetric("tfg_dario", getCore()->getId(), "total_accesses", &totalAccesses);
 
 }
 
