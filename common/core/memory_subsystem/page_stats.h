@@ -16,8 +16,8 @@ private:
     int totalPages;
     int minUsage;
     int maxUsage;
-    long long int totalAccesses;
-    long long int totalUse;
+    int totalAccesses;
+    int totalUse;
     bool ejecucion;
     void evictPage(int pageAddress);
 };
