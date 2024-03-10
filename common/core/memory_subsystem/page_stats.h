@@ -12,7 +12,7 @@ public:
 
 private:
     std::unordered_map<IntPtr, std::bitset<1024>> pageMap; // Asumimos que el tamano de la pagina es 4096 bytes (1024 palabras de 4 bytes)
-    std::unordered_map<IntPtr, int> pageAccessCount;
+    std::unordered_map<IntPtr, UInt64> pageAccessCount;
     UInt64 totalPages;
     UInt64 minUsage;
     UInt64 maxUsage;
