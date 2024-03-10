@@ -1,6 +1,7 @@
 #include "tlb.h"
 #include "stats.h"
 #include "simulator.h"
+#include "config.hpp"
 namespace ParametricDramDirectoryMSI
 {
 
