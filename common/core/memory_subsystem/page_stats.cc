@@ -5,7 +5,7 @@
 #define PAGE_SIZE 4096
 #define WORD_SIZE 4
 
-PageStats::PageStats(bool ejec) : totalPages(0), minUsage(0), maxUsage(0) {
+PageStats::PageStats(bool ejec, core_id_t core_id) : totalPages(0), minUsage(0), maxUsage(0) {
     // Inicializar todos los elementos del mapa de páginas y el contador de acceso a la página a 0
     for (auto& pair : pageMap) {
         pair.second.reset();
@@ -17,11 +17,11 @@ PageStats::PageStats(bool ejec) : totalPages(0), minUsage(0), maxUsage(0) {
     totalUse = 0;
     totalAccesses = 0;
 
-    registerStatsMetric("tfg_dario", getCore()->getId(), "total_pages", &totalPages);
-    registerStatsMetric("tfg_dario", getCore()->getId(), "min_usage", &minUsage);
-    registerStatsMetric("tfg_dario", getCore()->getId(), "max_usage", &maxUsage);
-    registerStatsMetric("tfg_dario", getCore()->getId(), "total_use", &totalUse);
-    registerStatsMetric("tfg_dario", getCore()->getId(), "total_accesses", &totalAccesses);
+    registerStatsMetric("tfg_dario", core_id, "total_pages", &totalPages);
+    registerStatsMetric("tfg_dario", core_id, "min_usage", &minUsage);
+    registerStatsMetric("tfg_dario", core_id, "max_usage", &maxUsage);
+    registerStatsMetric("tfg_dario", core_id, "total_use", &totalUse);
+    registerStatsMetric("tfg_dario", core_id, "total_accesses", &totalAccesses);
 
 }
 

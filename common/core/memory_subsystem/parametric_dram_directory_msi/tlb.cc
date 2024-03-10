@@ -16,7 +16,7 @@ TLB::TLB(String name, String cfgname, core_id_t core_id, UInt32 num_entries, UIn
 
    registerStatsMetric(name, core_id, "access", &m_access);
    registerStatsMetric(name, core_id, "miss", &m_miss);
-   pageStats = PageStats(Sim()->getCfg()->getBool("tfg/dario/conteo_uso_paginas"););
+   pageStats = PageStats(Sim()->getCfg()->getBool("tfg/dario/conteo_uso_paginas"), core_id);
 }
 
 bool

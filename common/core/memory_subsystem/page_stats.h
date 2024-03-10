@@ -1,12 +1,13 @@
 #ifndef PAGE_STATS_H
 #define PAGE_STATS_H
 
+#include "fixed_types.h"
 #include <unordered_map>
 #include <bitset>
 
 class PageStats {
 public:
-    PageStats(bool ejecucion);
+    PageStats(bool ejecucion, core_id_t core_id);
     void updatePageStats(int pageAdress, bool evict);
 
 private:
