@@ -106,14 +106,16 @@ def stats_process(config, results):
   # add computed stats
   try:
     # 4 estadisticas nuevas
+    #Para el core 0 en todo momento
     totalPages = stats['tfg_dario.total_pages']
     minUsage = stats['tfg_dario.min_usage']
     maxUsage = stats['tfg_dario.max_usage']
     totalAccesses = stats['tfg_dario.total_accesses']
     totalUse = stats['tfg_dario.total_use']
-    #sacar promedios y meterlos a stats, por ejemplo acceso medio a paginas, uso medio paginas, min y max
-    stats['tfg_dario.avg_accesses'] = totalAccesses / totalPages
-    stats['tfg_dario.avg_use'] = totalUse / totalPages
+
+    # Sacar promedios y meterlos a stats, por ejemplo acceso medio a paginas, uso medio paginas, min y max
+    stats['tfg_dario.avg_accesses'] = [a / p for a, p in zip(totalAccesses, totalPages)]
+    stats['tfg_dario.avg_use'] = [u / p for u, p in zip(totalUse, totalPages)]
     #fin 4 estadisticas nuevas
     l1access = sum(stats['L1-D.load-misses']) + sum(stats['L1-D.store-misses'])
     l1time = sum(stats['L1-D.total-latency'])

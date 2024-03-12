@@ -13,7 +13,7 @@
 #include "shmem_perf_model.h"
 #include "shared_cache_block_info.h"
 #include "subsecond_time.h"
-
+#include "page_stats.h"
 #include <map>
 
 class DramCache;
@@ -39,6 +39,7 @@ namespace ParametricDramDirectoryMSI
          TLB *m_itlb, *m_dtlb, *m_stlb;
          ComponentLatency m_tlb_miss_penalty;
          bool m_tlb_miss_parallel;
+         PageStats *pageStats;
 
          core_id_t m_core_id_master;
 

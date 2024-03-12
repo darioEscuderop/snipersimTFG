@@ -5,17 +5,17 @@
 namespace ParametricDramDirectoryMSI
 {
 
-TLB::TLB(String name, String cfgname, core_id_t core_id, UInt32 num_entries, UInt32 associativity, TLB *next_level)
+TLB::TLB(String name, String cfgname, core_id_t core_id, UInt32 num_entries, UInt32 associativity, TLB *next_level, PageStats *pS)
    : m_size(num_entries)
    , m_associativity(associativity)
    , m_cache(name + "_cache", cfgname, core_id, num_entries / associativity, associativity, SIM_PAGE_SIZE, "lru", CacheBase::PR_L1_CACHE)
    , m_next_level(next_level)
    , m_access(0)
    , m_miss(0)
-   , pageStats(Sim()->getCfg()->getBool("tfg/dario/conteo_uso_paginas"), core_id)  
+    
 {
    LOG_ASSERT_ERROR((num_entries / associativity) * associativity == num_entries, "Invalid TLB configuration: num_entries(%d) must be a multiple of the associativity(%d)", num_entries, associativity);
-
+   pageStats = pS;
    registerStatsMetric(name, core_id, "access", &m_access);
    registerStatsMetric(name, core_id, "miss", &m_miss);
    //bool ejecucion = Sim()->getCfg()->getBool("tfg/dario/conteo_uso_paginas");
@@ -30,8 +30,8 @@ TLB::lookup(IntPtr address, SubsecondTime now, bool allocate_on_miss)
    m_access++;
    //De momento solo buscamos el saber cuantas veces se accede a una pagina y a sus words para sacar un promedio
    //Si está en la configuración hacer, si no, no hacer nada
-
-   pageStats.updatePageStats(address);
+   if(pageStats != NULL)
+      pageStats->updatePageStats(address);
 
    if (hit){
       return true;

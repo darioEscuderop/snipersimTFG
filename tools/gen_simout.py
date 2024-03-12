@@ -166,6 +166,16 @@ def generate_simout(jobid = None, resultsdir = None, partial = None, output = sy
         #('  num stores from remote cache', 'L1-D.stores-where-cache-remote' , str),
       ])
 
+  if config['tfg/dario/conteo_uso_paginas'] == 'true':
+    template.append(('Conteo de paginas para TFG', '', ''))
+    template.append(('\tTotal accesses' , 'tfg_dario.total_accesses',  str))
+    template.append(('\tTotal use' , 'tfg_dario.total_use',  str))
+    template.append(('\tAverage accesses' , 'tfg_dario.avg_accesses', str))
+    template.append(('\tAverage use' , 'tfg_dario.avg_use', str))
+    template.append(('\tMin Use Per Page' , 'tfg_dario.min_usage',  str))
+    template.append(('\tMax Use Per Page' , 'tfg_dario.max_usage',  str))
+
+
   lines = []
   lines.append([''] + [ 'Core %u' % i for i in range(ncores) ])
 
@@ -179,11 +189,7 @@ def generate_simout(jobid = None, resultsdir = None, partial = None, output = sy
     lines.append(line)
 
     #Siempre que tfg.dario.conteo_uso_pagina este a true en config
-    if config['tfg.dario.conteo_uso_pagina'] == 'true':
-      lines.append(['Total accesses' , str(stats['tfg_dario.total_accesses'])])
-      lines.append(['Total use' , str(stats['tfg_dario.total_use'])])
-      lines.append(['Average accesses' , str(stats['tfg_dario.avg_accesses'])])
-      lines.append(['Average use' , str(stats['tfg_dario.avg_use'])])
+    
 
 
   widths = [ max(10, max([ len(l[i]) for l in lines ])) for i in range(len(lines[0])) ]

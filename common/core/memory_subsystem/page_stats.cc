@@ -18,13 +18,19 @@ PageStats::PageStats(bool ejec, core_id_t core_id) : totalPages(0), minUsage(0),
     ejecucion = ejec;
     totalUse = 0;
     totalAccesses = 0;
+    core = core_id;
+    countedPages = std::set<int>();
 
-    registerStatsMetric("tfg_dario", core_id, "total_pages", &totalPages);
-    registerStatsMetric("tfg_dario", core_id, "min_usage", &minUsage);
-    registerStatsMetric("tfg_dario", core_id, "max_usage", &maxUsage);
-    registerStatsMetric("tfg_dario", core_id, "total_use", &totalUse);
-    registerStatsMetric("tfg_dario", core_id, "total_accesses", &totalAccesses);
+    registerStatsMetric("tfg_dario", core, "total_pages", &totalPages);
+    registerStatsMetric("tfg_dario", core, "min_usage", &minUsage);
+    registerStatsMetric("tfg_dario", core, "max_usage", &maxUsage);
+    registerStatsMetric("tfg_dario", core, "total_use", &totalUse);
+    registerStatsMetric("tfg_dario", core, "total_accesses", &totalAccesses);
+}
 
+
+PageStats::~PageStats(){
+  
 }
 
 void PageStats::updatePageStats(IntPtr pageAddress, bool evictedPage) {
@@ -40,13 +46,22 @@ void PageStats::updatePageStats(IntPtr pageAddress, bool evictedPage) {
     int word = (pageAddress % PAGE_SIZE) / WORD_SIZE; // Asume que el tamaño de la palabra es de 4 bytes
 
     // Actualizar el mapa de la página
-    pageMap[page][word] = 1;
+    if(pageMap[page][word] == 0){
+        pageMap[page][word] = 1;
+        totalUse +=1; 
+    }
+
+    // Verificar si la página ha sido accedida anteriormente
+    if (countedPages.find(page) == countedPages.end()){
+        // Incrementar el contador de páginas accedidas
+        countedPages.insert(page);
+        totalPages++;
+    } 
 
     // Actualizar el contador de acceso a la página
     pageAccessCount[page]++;
+    totalAccesses++;
 
-    // Actualizar estadísticas
-    totalPages++;
     minUsage = std::min(minUsage, pageAccessCount[page]);
     maxUsage = std::max(maxUsage, pageAccessCount[page]);
     
@@ -56,18 +71,9 @@ void PageStats::evictPage(IntPtr pageAddress) {
     // Convertir la dirección de la página en un número de página
     int page = pageAddress / PAGE_SIZE;
 
-    //Actualizamos el contador de total uso recorriendo el mapa de paginas y sumando los bits a 1
-    for (auto& pair : pageMap) {
-        totalUse += pair.second.count();
-    }
-
-    // Actualizar el contador de acceso a la página
-    totalAccesses += pageAccessCount[page];
-
+    countedPages.erase(page);
     // Eliminar la entrada correspondiente a la página en pageMap y pageAccessCount
     pageMap[page].reset();
     pageAccessCount[page] = 0;
 
 }
-
-//Mejoras --> Cuando se acabe el programa se vacia todas las paginas???

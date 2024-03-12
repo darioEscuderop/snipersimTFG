@@ -22,9 +22,9 @@ namespace ParametricDramDirectoryMSI
 
          UInt64 m_access, m_miss;
 
-         PageStats pageStats;
+         PageStats *pageStats;
       public:
-         TLB(String name, String cfgname, core_id_t core_id, UInt32 num_entries, UInt32 associativity, TLB *next_level);
+         TLB(String name, String cfgname, core_id_t core_id, UInt32 num_entries, UInt32 associativity, TLB *next_level, PageStats *pS);
          bool lookup(IntPtr address, SubsecondTime now, bool allocate_on_miss = true);
          void allocate(IntPtr address, SubsecondTime now);
    };
