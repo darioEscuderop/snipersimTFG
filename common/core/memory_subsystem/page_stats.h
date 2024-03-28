@@ -9,7 +9,7 @@
 class PageStats {
 public:
     PageStats(bool ejecucion, core_id_t core_id);
-    void updatePageStats(IntPtr pageAdress, bool evict = false);
+    void updatePageStats(IntPtr address, bool evict = false);
     ~PageStats();
 private:
     std::unordered_map<IntPtr, std::bitset<1024>> pageMap; // Asumimos que el tamano de la pagina es 4096 bytes (1024 palabras de 4 bytes)
