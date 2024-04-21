@@ -17,13 +17,16 @@
 #include "rng.h"
 #include "routine_tracer.h"
 #include "sim_api.h"
-
 #include "stats.h"
 
 #include <unistd.h>
 #include <sys/syscall.h>
 
 #include <x86_decoder.h>  // TODO remove when the decode function in microop perf model is adapted
+
+#define PAGE_SIZE_4KB 0x1000
+#define PAGE_SIZE_2MB 0x200000
+#define WORD_SIZE 4
 
 int TraceThread::m_isa = 0;
 
@@ -79,7 +82,7 @@ TraceThread::TraceThread(Thread *thread, SubsecondTime time_start, String tracef
    }
 
    thread->setVa2paFunc(_va2pa, (UInt64)this);
-   
+
 }
 
 TraceThread::~TraceThread()
@@ -95,6 +98,8 @@ TraceThread::~TraceThread()
       delete (*i).second;
    }
 }
+
+
 
 UInt64 TraceThread::va2pa(UInt64 va, bool *noMapping)
 {
@@ -115,18 +120,18 @@ UInt64 TraceThread::va2pa(UInt64 va, bool *noMapping)
       }
    }
 
-   UInt64 haddr;
 
+   UInt64 haddr;
    // When the scheduler is set to sequential, every thread with same core affinity
    // will be considered chunks of the same process, therefore they have the same
    // physical address space.
    if (m_appid_from_coreid)
    {
-        haddr = UInt64(m_thread->getCore()->getId());
+      haddr = UInt64(m_thread->getCore()->getId());
    }
    else
    {
-        haddr = UInt64(m_thread->getAppId());
+      haddr = UInt64(m_thread->getAppId());
    }
 
    if (m_address_randomization)

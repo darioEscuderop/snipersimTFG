@@ -170,6 +170,7 @@ def generate_simout(jobid = None, resultsdir = None, partial = None, output = sy
     template.append(('Conteo de paginas para TFG', '', ''))
     template.append(('\tTotal accesses' , 'tfg_dario.total_accesses',  str))
     template.append(('\tTotal use' , 'tfg_dario.total_use',  str))
+    template.append(('\tTotal Pages' , 'tfg_dario.total_pages',  str))
     template.append(('\tAverage accesses' , 'tfg_dario.avg_accesses', str))
     template.append(('\tAverage use' , 'tfg_dario.avg_use', str))
     template.append(('\tMin Use Per Page' , 'tfg_dario.min_usage',  str))

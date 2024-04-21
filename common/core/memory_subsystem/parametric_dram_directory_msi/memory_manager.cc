@@ -42,7 +42,8 @@ MemoryManager::MemoryManager(Core* core,
    m_tlb_miss_parallel(false),
    m_tag_directory_present(false),
    m_dram_cntlr_present(false),
-   m_enabled(false)
+   m_enabled(false),
+   m_page_table(NULL)
 {
    // Read Parameters from the Config file
    std::map<MemComponent::component_t, CacheParameters> cache_parameters;
@@ -62,22 +63,26 @@ MemoryManager::MemoryManager(Core* core,
    String dram_directory_type_str;
    UInt32 dram_directory_home_lookup_param = 0;
    ComponentLatency dram_directory_cache_access_time(global_domain, 0);
+   tipoSistema =Sim()->getCfg()->getInt("tfg/dario/tipo_sistema_memoria");
 
    try
    {
+      m_page_table = new PageTable(Sim()->getCfg()->getInt("tfg/dario/memoria") * 1024 * 1024, core->getId());
       m_cache_block_size = Sim()->getCfg()->getInt("perf_model/l1_icache/cache_block_size");
       pageStats =  new PageStats(Sim()->getCfg()->getBool("tfg/dario/conteo_uso_paginas"), getCore()->getId());
       m_last_level_cache = (MemComponent::component_t)(Sim()->getCfg()->getInt("perf_model/cache/levels") - 2 + MemComponent::L2_CACHE);
 
       UInt32 stlb_size = Sim()->getCfg()->getInt("perf_model/stlb/size");
       if (stlb_size)
-         m_stlb = new TLB("stlb", "perf_model/stlb", getCore()->getId(), stlb_size, Sim()->getCfg()->getInt("perf_model/stlb/associativity"), NULL, NULL);
+         m_stlb = new TLB("stlb", "perf_model/stlb", getCore()->getId(), stlb_size, Sim()->getCfg()->getInt("perf_model/stlb/associativity"), NULL, NULL, m_page_table);
       UInt32 itlb_size = Sim()->getCfg()->getInt("perf_model/itlb/size");
       if (itlb_size)
-         m_itlb = new TLB("itlb", "perf_model/itlb", getCore()->getId(), itlb_size, Sim()->getCfg()->getInt("perf_model/itlb/associativity"), m_stlb, NULL);
+         m_itlb = new TLB("itlb", "perf_model/itlb", getCore()->getId(), itlb_size, Sim()->getCfg()->getInt("perf_model/itlb/associativity"), m_stlb, NULL, NULL);
       UInt32 dtlb_size = Sim()->getCfg()->getInt("perf_model/dtlb/size");
-      if (dtlb_size)
-         m_dtlb = new TLB("dtlb", "perf_model/dtlb", getCore()->getId(), dtlb_size, Sim()->getCfg()->getInt("perf_model/dtlb/associativity"), m_stlb, pageStats);
+      if (dtlb_size){
+         m_dtlb_2mb = new TLB("dtlb2mb", "perf_model/dtlb", getCore()->getId(), dtlb_size, Sim()->getCfg()->getInt("perf_model/dtlb/associativity"), m_stlb, NULL,  m_page_table);
+         m_dtlb = new TLB("dtlb", "perf_model/dtlb", getCore()->getId(), dtlb_size, Sim()->getCfg()->getInt("perf_model/dtlb/associativity"), m_stlb,  m_dtlb_2mb, m_page_table);
+      }
       m_tlb_miss_penalty = ComponentLatency(core->getDvfsDomain(), Sim()->getCfg()->getInt("perf_model/tlb/penalty"));
       m_tlb_miss_parallel = Sim()->getCfg()->getBool("perf_model/tlb/penalty_parallel");
 
@@ -429,8 +434,23 @@ MemoryManager::coreInitiateMemoryAccess(
 
    if (mem_component == MemComponent::L1_ICACHE && m_itlb)
       accessTLB(m_itlb, address, true, modeled);
-   else if (mem_component == MemComponent::L1_DCACHE && m_dtlb)
-      accessTLB(m_dtlb, address, false, modeled);
+   else if (mem_component == MemComponent::L1_DCACHE && (m_dtlb ||m_dtlb_2mb)){
+      switch (tipoSistema){
+         case PAGINAS_4KB:
+            accessTLB(m_dtlb, address, true, modeled);
+            break;
+         case PAGINAS_2MB:
+            accessTLB(m_dtlb_2mb, address, true, modeled);
+            break;
+         case PAGINAS_4KB_2MB:
+            accessTLB(m_dtlb, address, true, modeled);
+            break;
+         case PAGINAS_2MB_SISTEMA_MEMORIA_PAGINAS_CALIENTES:
+            accessTLB(m_dtlb_2mb, address, true, modeled);
+            break;
+      }
+
+   }
 
    return m_cache_cntlrs[mem_component]->processMemOpFromCore(
          lock_signal,

@@ -8,10 +8,11 @@
 #include "sift_reader.h"
 #include "operand.h"
 #include "semaphore.h"
-
+#include <bitset>
 #include <decoder.h>
-
+#include <list>
 #include <unordered_map>
+#include "set"
 
 #define NUM_PAPI_COUNTERS 6
 
@@ -122,12 +123,14 @@ class TraceThread : public Runnable
       
       Lock m_lock;
 
+      
+
    public:
       bool m_stopped;
 
       TraceThread(Thread *thread, SubsecondTime time_start, String tracefile, String responsefile, app_id_t app_id, bool cleanup);
       ~TraceThread();
-
+      void calculo(UInt64 va);
       void spawn();
       void stop() { m_stop = true; }
       UInt64 getProgressExpect();

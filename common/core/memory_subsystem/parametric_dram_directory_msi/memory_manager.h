@@ -15,6 +15,7 @@
 #include "subsecond_time.h"
 #include "page_stats.h"
 #include <map>
+#include "page_table.h"
 
 class DramCache;
 class ShmemPerf;
@@ -29,6 +30,7 @@ namespace ParametricDramDirectoryMSI
    class MemoryManager : public MemoryManagerBase
    {
       private:
+
          CacheCntlr* m_cache_cntlrs[MemComponent::LAST_LEVEL_CACHE + 1];
          NucaCache* m_nuca_cache;
          DramCache* m_dram_cache;
@@ -36,7 +38,7 @@ namespace ParametricDramDirectoryMSI
          PrL1PrL2DramDirectoryMSI::DramCntlr* m_dram_cntlr;
          AddressHomeLookup* m_tag_directory_home_lookup;
          AddressHomeLookup* m_dram_controller_home_lookup;
-         TLB *m_itlb, *m_dtlb, *m_stlb;
+         TLB *m_itlb, *m_dtlb, *m_stlb, *m_dtlb_2mb;
          ComponentLatency m_tlb_miss_penalty;
          bool m_tlb_miss_parallel;
          PageStats *pageStats;
@@ -61,6 +63,8 @@ namespace ParametricDramDirectoryMSI
          // Global map of all caches on all cores (within this process!)
          static CacheCntlrMap m_all_cache_cntlrs;
 
+         PageTable * m_page_table;
+         int64_t tipoSistema;
          void accessTLB(TLB * tlb, IntPtr address, bool isIfetch, Core::MemModeled modeled);
 
       public:

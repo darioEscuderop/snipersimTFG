@@ -4,18 +4,20 @@
 #include "config.hpp"
 namespace ParametricDramDirectoryMSI
 {
-
-TLB::TLB(String name, String cfgname, core_id_t core_id, UInt32 num_entries, UInt32 associativity, TLB *next_level, PageStats *pS)
+//4kb --> 2mb
+TLB::TLB(String name, String cfgname, core_id_t core_id, UInt32 num_entries, UInt32 associativity, TLB *next_level,  TLB * tlb_2mb, PageTable *pT)
    : m_size(num_entries)
    , m_associativity(associativity)
-   , m_cache(name + "_cache", cfgname, core_id, num_entries / associativity, associativity, SIM_PAGE_SIZE, "lru", CacheBase::PR_L1_CACHE)
+   , m_cache(name + "_cache", cfgname, core_id, num_entries / associativity, associativity, tlb_2mb == NULL ?  SIM_PAGE_SIZE : SIM_PAGE_SIZE_2MB, "lru", CacheBase::PR_L1_CACHE)
    , m_next_level(next_level)
    , m_access(0)
    , m_miss(0)
+   , m_2mb_tlb(tlb_2mb)
+   , m_page_table(pT)
+   
     
 {
    LOG_ASSERT_ERROR((num_entries / associativity) * associativity == num_entries, "Invalid TLB configuration: num_entries(%d) must be a multiple of the associativity(%d)", num_entries, associativity);
-   pageStats = pS;
    registerStatsMetric(name, core_id, "access", &m_access);
    registerStatsMetric(name, core_id, "miss", &m_miss);
    //bool ejecucion = Sim()->getCfg()->getBool("tfg/dario/conteo_uso_paginas");
@@ -25,20 +27,18 @@ TLB::TLB(String name, String cfgname, core_id_t core_id, UInt32 num_entries, UIn
 bool
 TLB::lookup(IntPtr address, SubsecondTime now, bool allocate_on_miss)
 {
-   bool hit = m_cache.accessSingleLine(address, Cache::LOAD, NULL, 0, now, true);
-
-   m_access++;
-   //De momento solo buscamos el saber cuantas veces se accede a una pagina y a sus words para sacar un promedio
-   //Si está en la configuración hacer, si no, no hacer nada
-   if(pageStats != NULL)
-      pageStats->updatePageStats(address);
-
-   if (hit){
+   bool hit = false;
+    hit = m_cache.accessSingleLine(address, Cache::LOAD, NULL, 0, now, true);
+      m_access++;
+         if (hit){
+           return true;
+         }
+      m_miss++; //4kb miss o 2mb_miss
+   if(hit)
       return true;
-   }
 
-   m_miss++;
 
+   //check stlb
    if (m_next_level)
    {
       hit = m_next_level->lookup(address, now, false /* no allocation */);
@@ -46,11 +46,19 @@ TLB::lookup(IntPtr address, SubsecondTime now, bool allocate_on_miss)
 
    if (allocate_on_miss)
    {
+      //Aqui en este punto venimos de un fallo de la L1TLB se inserta en la TLB
       allocate(address, now);
    }
 
+   if(!hit){
+      if(m_next_level == NULL ){ // LO hace la TLB de 2MB o 4KB
+         m_page_table->insertPageIfNotPresent(address);
+      }
+
+   }
    return hit;
 }
+
 
 void
 TLB::allocate(IntPtr address, SubsecondTime now)

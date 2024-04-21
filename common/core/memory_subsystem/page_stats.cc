@@ -24,12 +24,15 @@ PageStats::PageStats(bool ejec, core_id_t core_id) :
         pair.second = 0;
     }
     countedPages = std::set<int>();
+    std::cout << "Prueba" << std::endl;
 
+/*
     registerStatsMetric("tfg_dario", core, "total_pages", &totalPages);
     registerStatsMetric("tfg_dario", core, "min_usage", &minUsage);
     registerStatsMetric("tfg_dario", core, "max_usage", &maxUsage);
     registerStatsMetric("tfg_dario", core, "total_use", &totalUse);
     registerStatsMetric("tfg_dario", core, "total_accesses", &totalAccesses);
+    */
 }
 
 
