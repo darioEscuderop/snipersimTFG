@@ -8,11 +8,12 @@
 
 class PageStats {
 public:
-    PageStats(bool ejecucion, core_id_t core_id);
-    void updatePageStats(IntPtr address, bool evict = false);
+    PageStats(bool ejecucion, core_id_t core_id, int tipo);
+    void updatePageStats(IntPtr address, IntPtr page_size, bool evict = false);
+    void evictPage(IntPtr pageAddress, IntPtr page_size);
     ~PageStats();
 private:
-    std::unordered_map<IntPtr, std::bitset<1024>> pageMap; // Asumimos que el tamano de la pagina es 4096 bytes (1024 palabras de 4 bytes)
+    std::unordered_map<IntPtr, std::bitset<(1L<<21 )/4>> pageMap; // Asumimos que el tamano de la pagina es 4096 bytes (1024 palabras de 4 bytes)
     std::unordered_map<IntPtr, UInt64> pageAccessCount;
     UInt64 totalPages;
     UInt64 minUsage;
@@ -21,7 +22,7 @@ private:
     UInt64 totalUse;
     core_id_t core;
     bool ejecucion;
-    void evictPage(IntPtr pageAddress);
+    int tipo;
     std::set<int> countedPages;
 
 };

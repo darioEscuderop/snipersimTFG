@@ -7,14 +7,15 @@
 #define PAGE_SIZE 4096
 #define WORD_SIZE 4
 
-PageStats::PageStats(bool ejec, core_id_t core_id) : 
+PageStats::PageStats(bool ejec, core_id_t core_id, int tipo) : 
     totalPages(0), 
     minUsage(0), 
     maxUsage(0), 
     totalAccesses(0), 
     totalUse(0), 
     core(core_id), 
-    ejecucion(ejec) 
+    ejecucion(ejec),
+    tipo(tipo)
 {
     // Inicializar todos los elementos del mapa de páginas y el contador de acceso a la página a 0
     for (auto& pair : pageMap) {
@@ -24,15 +25,14 @@ PageStats::PageStats(bool ejec, core_id_t core_id) :
         pair.second = 0;
     }
     countedPages = std::set<int>();
-    std::cout << "Prueba" << std::endl;
 
-/*
-    registerStatsMetric("tfg_dario", core, "total_pages", &totalPages);
-    registerStatsMetric("tfg_dario", core, "min_usage", &minUsage);
-    registerStatsMetric("tfg_dario", core, "max_usage", &maxUsage);
-    registerStatsMetric("tfg_dario", core, "total_use", &totalUse);
-    registerStatsMetric("tfg_dario", core, "total_accesses", &totalAccesses);
-    */
+
+    registerStatsMetric("tfg_dario", core_id, "total_pages", &totalPages);
+    registerStatsMetric("tfg_dario", core_id, "min_usage", &minUsage);
+    registerStatsMetric("tfg_dario", core_id, "max_usage", &maxUsage);
+    registerStatsMetric("tfg_dario", core_id, "total_use", &totalUse);
+    registerStatsMetric("tfg_dario", core_id, "total_accesses", &totalAccesses);
+    
 }
 
 
@@ -41,17 +41,17 @@ PageStats::~PageStats(){
     
 }
 
-void PageStats::updatePageStats(IntPtr address, bool evictedPage) {
+void PageStats::updatePageStats(IntPtr address, IntPtr page_size, bool evictedPage) {
     if(!ejecucion) return;
-    
+
     if(evictedPage){
-        evictPage(address);
+        evictPage(address, page_size);
     }
     // Convertir la dirección de la página en un número de página
-    int page = address / PAGE_SIZE; 
+    int page = address / page_size; 
 
     // Convertir la dirección de la página en un índice de palabra dentro de la página
-    int word = (address % PAGE_SIZE) / WORD_SIZE; // Asume que el tamaño de la palabra es de 4 bytes
+    int word = (address % page_size) / WORD_SIZE; // Asume que el tamaño de la palabra es de 4 bytes
 
     // Actualizar el mapa de la página
     if(pageMap[page][word] == 0){
@@ -83,9 +83,14 @@ void PageStats::updatePageStats(IntPtr address, bool evictedPage) {
    */
 }
 
-void PageStats::evictPage(IntPtr address) {
+void PageStats::evictPage(IntPtr address, IntPtr page_size) {
     // Convertir la dirección de la página en un número de página
-    int page = address / PAGE_SIZE;
+    int page = address / page_size;
+
+    // Verificar si la página existe en el mapa de páginas
+    if (pageMap.find(page) == pageMap.end()) {
+        return; // La página no existe, no hacer nada
+    }
 
     countedPages.erase(page);
     // Eliminar la entrada correspondiente a la página en pageMap y pageAccessCount

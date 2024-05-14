@@ -20,6 +20,7 @@ class Page{
         bool operator<(const Page &p) const;
 
         TipoPage tipo;
+
 };
 
 #endif // PAGE_H

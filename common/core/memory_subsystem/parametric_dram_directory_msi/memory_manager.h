@@ -38,7 +38,7 @@ namespace ParametricDramDirectoryMSI
          PrL1PrL2DramDirectoryMSI::DramCntlr* m_dram_cntlr;
          AddressHomeLookup* m_tag_directory_home_lookup;
          AddressHomeLookup* m_dram_controller_home_lookup;
-         TLB *m_itlb, *m_dtlb, *m_stlb, *m_dtlb_2mb;
+         TLB *m_itlb, *m_dtlb, *m_stlb, *m_dtlb_2mb, *m_stlb_2mb;
          ComponentLatency m_tlb_miss_penalty;
          bool m_tlb_miss_parallel;
          PageStats *pageStats;
@@ -68,6 +68,9 @@ namespace ParametricDramDirectoryMSI
          void accessTLB(TLB * tlb, IntPtr address, bool isIfetch, Core::MemModeled modeled);
 
       public:
+         static const IntPtr SIM_PAGE_SIZE = 1L << 12;
+         static const IntPtr SIM_PAGE_SIZE_2MB = 1L << 21;
+
          MemoryManager(Core* core, Network* network, ShmemPerfModel* shmem_perf_model);
          ~MemoryManager();
 

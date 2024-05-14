@@ -87,12 +87,12 @@ def generate_simout(jobid = None, resultsdir = None, partial = None, output = sy
     ('TLB Summary', '', ''),
   ]
 
-  for tlb in ('itlb', 'dtlb', 'stlb'):
+  for tlb in ('itlb', 'dtlb', 'dtlb_2mb', 'stlb', 'stlb_2mb'):
     if '%s.access'%tlb in results:
       results['%s.missrate'%tlb] = map(lambda (a,b): 100*a/float(b or 1), zip(results['%s.miss'%tlb], results['%s.access'%tlb]))
       results['%s.mpki'%tlb] = map(lambda (a,b): 1000*a/float(b or 1), zip(results['%s.miss'%tlb], results['performance_model.instruction_count']))
       template.extend([
-        ('  %s' % {'itlb': 'I-TLB', 'dtlb': 'D-TLB', 'stlb': 'L2 TLB'}[tlb], '', ''),
+        ('  %s' % {'itlb': 'I-TLB', 'dtlb': 'D-TLB-4KB', 'stlb': 'L2 TLB 4KB', 'dtlb_2mb' : 'D-TLB-2MB','stlb_2mb' : 'L2 TLB 2MB'}[tlb], '', ''),
         ('    num accesses', '%s.access'%tlb, str),
         ('    num misses', '%s.miss'%tlb, str),
         ('    miss rate', '%s.missrate'%tlb, lambda v: '%.2f%%' % v),
@@ -175,6 +175,7 @@ def generate_simout(jobid = None, resultsdir = None, partial = None, output = sy
     template.append(('\tAverage use' , 'tfg_dario.avg_use', str))
     template.append(('\tMin Use Per Page' , 'tfg_dario.min_usage',  str))
     template.append(('\tMax Use Per Page' , 'tfg_dario.max_usage',  str))
+    template.append(('\tTotal Page Table Walk' , 'tfg_dario.total_page_table_walk',  str))
 
 
   lines = []

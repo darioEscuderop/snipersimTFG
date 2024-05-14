@@ -112,7 +112,7 @@ def stats_process(config, results):
     maxUsage = stats['tfg_dario.max_usage']
     totalAccesses = stats['tfg_dario.total_accesses']
     totalUse = stats['tfg_dario.total_use']
-
+    totalPageTableWalk = stats['tfg_dario.total_page_table_walk']
     # Sacar promedios y meterlos a stats, por ejemplo acceso medio a paginas, uso medio paginas, min y max
     stats['tfg_dario.avg_accesses'] = [a / p for a, p in zip(totalAccesses, totalPages)]
     stats['tfg_dario.avg_use'] = [u / p for u, p in zip(totalUse, totalPages)]

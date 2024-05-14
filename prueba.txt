@@ -1,0 +1,1788 @@
+[SNIPER] Start
+[SNIPER] --------------------------------------------------------------------------------
+[SNIPER] Sniper using SIFT/trace-driven frontend
+[SNIPER] Running pre-ROI region in  FAST_FORWARD mode
+[SNIPER] Running application ROI in DETAILED mode
+[SNIPER] Running post-ROI region in FAST_FORWARD mode
+[SNIPER] --------------------------------------------------------------------------------
+[SNIPER] Enabling performance models
+[SNIPER] Setting instrumentation mode to DETAILED
+Memory usage: 0
+VP: 7fa69a9f5
+Memory usage: 0.000244141
+VP: 7fa69b2bc
+Memory usage: 0.000488281
+VP: 7fa69b52f
+Memory usage: 0.000732422
+VP: 7fa69b817
+Memory usage: 0.000976562
+VP: 7fa69b40f
+Memory usage: 0.0012207
+VP: 7fa69b84c
+Memory usage: 0.00146484
+VP: 7fa69b28a
+Memory usage: 0.00170898
+VP: 7fa69b8d3
+Memory usage: 0.00195312
+VP: 7fa69b859
+Memory usage: 0.00219727
+VP: 7fa69b39a
+Memory usage: 0.00244141
+VP: 7fa69b7e4
+Memory usage: 0.00268555
+VP: 7fa69b638
+Memory usage: 0.00292969
+VP: 7fa69b380
+Memory usage: 0.00317383
+VP: 7fa69b6da
+Memory usage: 0.00341797
+VP: 7fa69b39d
+Memory usage: 0.00366211
+VP: 7fa69b50e
+Memory usage: 0.00390625
+VP: 7fa69b768
+Memory usage: 0.00415039
+VP: 7fa69b622
+Memory usage: 0.00439453
+VP: 7fa69b318
+Memory usage: 0.00463867
+VP: 7fa69b1f9
+Memory usage: 0.00488281
+VP: 7fa69b72f
+Memory usage: 0.00512695
+VP: 7fa69b577
+Memory usage: 0.00537109
+VP: 7fa69b7b7
+Memory usage: 0.00561523
+VP: 7fa69b450
+Memory usage: 0.00585938
+VP: 7fa69b548
+Memory usage: 0.00610352
+VP: 7fa69b368
+Memory usage: 0.00634766
+VP: 7fa69b587
+Memory usage: 0.0065918
+VP: 7fa69b463
+Memory usage: 0.00683594
+VP: 7fa69b7fc
+Memory usage: 0.00708008
+VP: 7fa69b61c
+Memory usage: 0.00732422
+VP: 7fa69b92f
+Memory usage: 0.00756836
+VP: 7fa69b7dd
+Memory usage: 0.0078125
+VP: 7fa69b834
+Memory usage: 0.00805664
+VP: 7fa69b5f4
+Memory usage: 0.00830078
+VP: 7fa69b8df
+Memory usage: 0.00854492
+VP: 7fa69b91d
+Memory usage: 0.00878906
+VP: 7fa69b584
+Memory usage: 0.0090332
+VP: 7fa69b24c
+Memory usage: 0.00927734
+VP: 7fa69b374
+Memory usage: 0.00952148
+VP: 7fa69b61e
+Memory usage: 0.00976562
+VP: 7fa69b6e3
+Memory usage: 0.0100098
+VP: 7fa69b74b
+Memory usage: 0.0102539
+VP: 7fa69b3b6
+Memory usage: 0.010498
+VP: 7fa69b336
+Memory usage: 0.0107422
+VP: 7fa69b50f
+Memory usage: 0.0109863
+VP: 7fa69b3d3
+Memory usage: 0.0112305
+VP: 7fa69b7b6
+Memory usage: 0.0114746
+VP: 7fa69b87e
+Memory usage: 0.0117188
+VP: 7fa69b42a
+Memory usage: 0.0119629
+VP: 7fa69b79b
+Memory usage: 0.012207
+VP: 7fa69b4b2
+Memory usage: 0.0124512
+VP: 7fa69b497
+Memory usage: 0.0126953
+VP: 7fa69b2a8
+Memory usage: 0.0129395
+VP: 7fa69b858
+Memory usage: 0.0131836
+VP: 7fa69b65e
+Memory usage: 0.0134277
+VP: 7fa69b886
+Memory usage: 0.0136719
+VP: 7fa69b571
+Memory usage: 0.013916
+VP: 7fa69b517
+Memory usage: 0.0141602
+VP: 7fa69b758
+Memory usage: 0.0144043
+VP: 7fa69b820
+Memory usage: 0.0146484
+VP: 7fa69b33d
+Memory usage: 0.0148926
+VP: 7fa69b744
+Memory usage: 0.0151367
+VP: 7fa69b6bb
+Memory usage: 0.0153809
+VP: 7fa69b426
+Memory usage: 0.015625
+VP: 7fa69b5ee
+Memory usage: 0.0158691
+VP: 7fa69b84f
+Memory usage: 0.0161133
+VP: 7fa69b401
+Memory usage: 0.0163574
+VP: 7fa69b427
+Memory usage: 0.0166016
+VP: 7fa69b8fa
+Memory usage: 0.0168457
+VP: 7fa69b7cc
+Memory usage: 0.0170898
+VP: 7fa69b2fb
+Memory usage: 0.017334
+VP: 7fa69b892
+Memory usage: 0.0175781
+VP: 7fa69b5d4
+Memory usage: 0.0178223
+VP: 7fa69b285
+Memory usage: 0.0180664
+VP: 7fa69b399
+Memory usage: 0.0183105
+VP: 7fa69b939
+Memory usage: 0.0185547
+VP: 7fa69b2f1
+Memory usage: 0.0187988
+VP: 7fa69b2d4
+Memory usage: 0.019043
+VP: 7fa69b619
+Memory usage: 0.0192871
+VP: 7fa69b342
+Memory usage: 0.0195312
+VP: 7fa69b5e5
+Memory usage: 0.0197754
+VP: 7fa69b90f
+Memory usage: 0.0200195
+VP: 7fa69b449
+Memory usage: 0.0202637
+VP: 7fa69b6f2
+Memory usage: 0.0205078
+VP: 7fa69b823
+Memory usage: 0.020752
+VP: 7fa69b38c
+Memory usage: 0.0209961
+VP: 7fa69b321
+Memory usage: 0.0212402
+VP: 7fa69b3f8
+Memory usage: 0.0214844
+VP: 7fa69b943
+Memory usage: 0.0217285
+VP: 7fa69b1fe
+Memory usage: 0.0219727
+VP: 7fa69b78b
+Memory usage: 0.0222168
+VP: 7fa69b93c
+Memory usage: 0.0224609
+VP: 7fa69b910
+Memory usage: 0.0227051
+VP: 7fa69b26f
+Memory usage: 0.0229492
+VP: 7fa69b7df
+Memory usage: 0.0231934
+VP: 7fa69b81c
+Memory usage: 0.0234375
+VP: 7fa69b6c6
+Memory usage: 0.0236816
+VP: 7fa69b2c4
+Memory usage: 0.0239258
+VP: 7fa69b22b
+Memory usage: 0.0241699
+VP: 7fa69b747
+Memory usage: 0.0244141
+VP: 7fa69b41e
+Memory usage: 0.0246582
+VP: 7fa69b91c
+Memory usage: 0.0249023
+VP: 7fa69b5d1
+Memory usage: 0.0251465
+VP: 7fa69b1e3
+Memory usage: 0.0253906
+VP: 7fa69b457
+Memory usage: 0.0256348
+VP: 7fa69b7c9
+Memory usage: 0.0258789
+VP: 7fa69b3d1
+Memory usage: 0.026123
+VP: 7fa69b79f
+Memory usage: 0.0263672
+VP: 7fa69b8fb
+Memory usage: 0.0266113
+VP: 7fa69b2a0
+Memory usage: 0.0268555
+VP: 7fa69b940
+Memory usage: 0.0270996
+VP: 7fa69b795
+Memory usage: 0.0273438
+VP: 7fa69b465
+Memory usage: 0.0275879
+VP: 7fa69b63f
+Memory usage: 0.027832
+VP: 7fa69b545
+Memory usage: 0.0280762
+VP: 7fa69b345
+Memory usage: 0.0283203
+VP: 7fa69b281
+Memory usage: 0.0285645
+VP: 7fa69b6c5
+Memory usage: 0.0288086
+VP: 7fa69b793
+Memory usage: 0.0290527
+VP: 7fa69b479
+Memory usage: 0.0292969
+VP: 7fa69b91a
+Memory usage: 0.029541
+VP: 7fa69b5dc
+Memory usage: 0.0297852
+VP: 7fa69b472
+Memory usage: 0.0300293
+VP: 7fa69b8e7
+Memory usage: 0.0302734
+VP: 7fa69b8a1
+Memory usage: 0.0305176
+VP: 7fa69b507
+Memory usage: 0.0307617
+VP: 7fa69b217
+Memory usage: 0.0310059
+VP: 7fa69b81d
+Memory usage: 0.03125
+VP: 7fa69b822
+Memory usage: 0.0314941
+VP: 7fa69b499
+Memory usage: 0.0317383
+VP: 7fa69b621
+Memory usage: 0.0319824
+VP: 7fa69b4f5
+Memory usage: 0.0322266
+VP: 7fa69b66b
+Memory usage: 0.0324707
+VP: 7fa69b2b0
+Memory usage: 0.0327148
+VP: 7fa69b920
+Memory usage: 0.032959
+VP: 7fa69b32e
+Memory usage: 0.0332031
+VP: 7fa69b1bd
+Memory usage: 0.0334473
+VP: 7fa69b1d4
+Memory usage: 0.0336914
+VP: 7fa69b2e7
+Memory usage: 0.0339355
+VP: 7fa69b4b4
+Memory usage: 0.0341797
+VP: 7fa69b1d1
+Memory usage: 0.0344238
+VP: 7fa69b331
+Memory usage: 0.034668
+VP: 7fa69b778
+Memory usage: 0.0349121
+VP: 7fa69b66e
+Memory usage: 0.0351562
+VP: 7fa69b6d5
+Memory usage: 0.0354004
+VP: 7fa69b91b
+Memory usage: 0.0356445
+VP: 7fa69b74d
+Memory usage: 0.0358887
+VP: 7fa69b64f
+Memory usage: 0.0361328
+VP: 7fa69b76c
+Memory usage: 0.036377
+VP: 7fa69b47c
+Memory usage: 0.0366211
+VP: 7fa69b81e
+Memory usage: 0.0368652
+VP: 7fa69b5fd
+Memory usage: 0.0371094
+VP: 7fa69b1a4
+Memory usage: 0.0373535
+VP: 7fa69b219
+Memory usage: 0.0375977
+VP: 7fa69b754
+Memory usage: 0.0378418
+VP: 7fa69b509
+Memory usage: 0.0380859
+VP: 7fa69b28f
+Memory usage: 0.0383301
+VP: 7fa69b62e
+Memory usage: 0.0385742
+VP: 7fa69b3e9
+Memory usage: 0.0388184
+VP: 7fa69b77f
+Memory usage: 0.0390625
+VP: 7fa69b505
+Memory usage: 0.0393066
+VP: 7fa69b73d
+Memory usage: 0.0395508
+VP: 7fa69b4a7
+Memory usage: 0.0397949
+VP: 7fa69b613
+Memory usage: 0.0400391
+VP: 7fa69b721
+Memory usage: 0.0402832
+VP: 7fa69b485
+Memory usage: 0.0405273
+VP: 7fa69b1f7
+Memory usage: 0.0407715
+VP: 7fa69b6af
+Memory usage: 0.0410156
+VP: 7fa69b535
+Memory usage: 0.0412598
+VP: 7fa69b2af
+Memory usage: 0.0415039
+VP: 7fa69b6df
+Memory usage: 0.041748
+VP: 7fa69b6c4
+Memory usage: 0.0419922
+VP: 7fa69b2dc
+Memory usage: 0.0422363
+VP: 7fa69b603
+Memory usage: 0.0424805
+VP: 7fa69b2b5
+Memory usage: 0.0427246
+VP: 7fa69b606
+Memory usage: 0.0429688
+VP: 7fa69b35b
+Memory usage: 0.0432129
+VP: 7fa69b2d7
+Memory usage: 0.043457
+VP: 7fa69b8e0
+Memory usage: 0.0437012
+VP: 7fa69b237
+Memory usage: 0.0439453
+VP: 7fa69b92b
+Memory usage: 0.0441895
+VP: 7fa69b8e2
+Memory usage: 0.0444336
+VP: 7fa69b73c
+Memory usage: 0.0446777
+VP: 7fa69b4a9
+Memory usage: 0.0449219
+VP: 7fa69b595
+Memory usage: 0.045166
+VP: 7fa69b8e9
+Memory usage: 0.0454102
+VP: 7fa69b3d2
+Memory usage: 0.0456543
+VP: 7fa69b1e2
+Memory usage: 0.0458984
+VP: 7fa69b8dc
+Memory usage: 0.0461426
+VP: 7fa69b6d8
+Memory usage: 0.0463867
+VP: 7fa69b654
+Memory usage: 0.0466309
+VP: 7fa69b6ba
+Memory usage: 0.046875
+VP: 7fa69b412
+Memory usage: 0.0471191
+VP: 7fa69b6a9
+Memory usage: 0.0473633
+VP: 7fa69b6ad
+Memory usage: 0.0476074
+VP: 7fa69b29b
+Memory usage: 0.0478516
+VP: 7fa69b211
+Memory usage: 0.0480957
+VP: 7fa69b8b5
+Memory usage: 0.0483398
+VP: 7fa69b215
+Memory usage: 0.048584
+VP: 7fa69b34c
+Memory usage: 0.0488281
+VP: 7fa69b575
+Memory usage: 0.0490723
+VP: 7fa69b6c3
+Memory usage: 0.0493164
+VP: 7fa69b658
+Memory usage: 0.0495605
+VP: 7fa69b430
+Memory usage: 0.0498047
+VP: 7fa69b87d
+Memory usage: 0.0500488
+VP: 7fa69b1e4
+Memory usage: 0.050293
+VP: 7fa69b3ce
+Memory usage: 0.0505371
+VP: 7fa69b36a
+Memory usage: 0.0507812
+VP: 7fa69b1cc
+Memory usage: 0.0510254
+VP: 7fa69b566
+Memory usage: 0.0512695
+VP: 7fa69b66f
+Memory usage: 0.0515137
+VP: 7fa69b766
+Memory usage: 0.0517578
+VP: 7fa69b2c5
+Memory usage: 0.052002
+VP: 7fa69b2c2
+Memory usage: 0.0522461
+VP: 7fa69b443
+Memory usage: 0.0524902
+VP: 7fa69b26b
+Memory usage: 0.0527344
+VP: 7fa69b6eb
+Memory usage: 0.0529785
+VP: 7fa69b483
+Memory usage: 0.0532227
+VP: 7fa69b3fd
+Memory usage: 0.0534668
+VP: 7fa69b678
+Memory usage: 0.0537109
+VP: 7fa69b38d
+Memory usage: 0.0539551
+VP: 7fa69b36c
+Memory usage: 0.0541992
+VP: 7fa69b8e8
+Memory usage: 0.0544434
+VP: 7fa69b2ec
+Memory usage: 0.0546875
+VP: 7fa69b2cf
+Memory usage: 0.0549316
+VP: 7fa69b31d
+Memory usage: 0.0551758
+VP: 7fa69b5de
+Memory usage: 0.0554199
+VP: 7fa69b537
+Memory usage: 0.0556641
+VP: 7fa69b487
+Memory usage: 0.0559082
+VP: 7fa69b652
+Memory usage: 0.0561523
+VP: 7fa69b6e2
+Memory usage: 0.0563965
+VP: 7fa69b2b2
+Memory usage: 0.0566406
+VP: 7fa69b5ef
+Memory usage: 0.0568848
+VP: 7fa69b541
+Memory usage: 0.0571289
+VP: 7fa69b504
+Memory usage: 0.057373
+VP: 7fa69b631
+Memory usage: 0.0576172
+VP: 7fa69b1c4
+Memory usage: 0.0578613
+VP: 7fa69b6cc
+Memory usage: 0.0581055
+VP: 7fa69b854
+Memory usage: 0.0583496
+VP: 7fa69b589
+Memory usage: 0.0585938
+VP: 7fa69b3f9
+Memory usage: 0.0588379
+VP: 7fa69b677
+Memory usage: 0.059082
+VP: 7fa69b6ac
+Memory usage: 0.0593262
+VP: 7fa69b712
+Memory usage: 0.0595703
+VP: 7fa69b370
+Memory usage: 0.0598145
+VP: 7fa69b1cd
+Memory usage: 0.0600586
+VP: 7fa69b4ba
+Memory usage: 0.0603027
+VP: 7fa69b1ef
+Memory usage: 0.0605469
+VP: 7fa69b294
+Memory usage: 0.060791
+VP: 7fa69b7eb
+Memory usage: 0.0610352
+VP: 7fa69b3de
+Memory usage: 0.0612793
+VP: 7fa69b701
+Memory usage: 0.0615234
+VP: 7fa69b272
+Memory usage: 0.0617676
+VP: 7fa69b705
+Memory usage: 0.0620117
+VP: 7fa69b245
+Memory usage: 0.0622559
+VP: 7fa69b722
+Memory usage: 0.0625
+VP: 7fa69b69d
+Memory usage: 0.0627441
+VP: 7fa69b54e
+Memory usage: 0.0629883
+VP: 7fa69b3a9
+Memory usage: 0.0632324
+VP: 7fa69b349
+Memory usage: 0.0634766
+VP: 7fa69b8ed
+Memory usage: 0.0637207
+VP: 7fa69b70c
+Memory usage: 0.0639648
+VP: 7fa69b230
+Memory usage: 0.064209
+VP: 7fa69b68d
+Memory usage: 0.0644531
+VP: 7fa69b74e
+Memory usage: 0.0646973
+VP: 7fa69b8e5
+Memory usage: 0.0649414
+VP: 7fa69b80f
+Memory usage: 0.0651855
+VP: 7fa69b4b7
+Memory usage: 0.0654297
+VP: 7fa69b8ac
+Memory usage: 0.0656738
+VP: 7fa69b23c
+Memory usage: 0.065918
+VP: 7fa69b6dc
+Memory usage: 0.0661621
+VP: 7fa69b423
+Memory usage: 0.0664062
+VP: 7fa69b6ed
+Memory usage: 0.0666504
+VP: 7fa69b3ba
+Memory usage: 0.0668945
+VP: 7fa69b669
+Memory usage: 0.0671387
+VP: 7fa69b45b
+Memory usage: 0.0673828
+VP: 7fa69b2ac
+Memory usage: 0.067627
+VP: 7fa69b474
+Memory usage: 0.0678711
+VP: 7fa69b629
+Memory usage: 0.0681152
+VP: 7fa69b80b
+Memory usage: 0.0683594
+VP: 7fa69b544
+Memory usage: 0.0686035
+VP: 7fa69b5e4
+Memory usage: 0.0688477
+VP: 7fa69b306
+Memory usage: 0.0690918
+VP: 7fa69b51b
+Memory usage: 0.0693359
+VP: 7fa69b33e
+Memory usage: 0.0695801
+VP: 7fa69b6b2
+Memory usage: 0.0698242
+VP: 7fa69b723
+Memory usage: 0.0700684
+VP: 7fa69b4e5
+Memory usage: 0.0703125
+VP: 7fa69b6e4
+Memory usage: 0.0705566
+VP: 7fa69b76b
+Memory usage: 0.0708008
+VP: 7fa69b278
+Memory usage: 0.0710449
+VP: 7fa69b42f
+Memory usage: 0.0712891
+VP: 7fa69b70b
+Memory usage: 0.0715332
+VP: 7fa69b824
+Memory usage: 0.0717773
+VP: 7fa69b5c9
+Memory usage: 0.0720215
+VP: 7fa69b5d7
+Memory usage: 0.0722656
+VP: 7fa69b591
+Memory usage: 0.0725098
+VP: 7fa69b72b
+Memory usage: 0.0727539
+VP: 7fa69b672
+Memory usage: 0.072998
+VP: 7fa69b32a
+Memory usage: 0.0732422
+VP: 7fa69b404
+Memory usage: 0.0734863
+VP: 7fa69b615
+Memory usage: 0.0737305
+VP: 7fa69b73b
+Memory usage: 0.0739746
+VP: 7fa69b8cc
+Memory usage: 0.0742188
+VP: 7fa69b6aa
+Memory usage: 0.0744629
+VP: 7fa69b44b
+Memory usage: 0.074707
+VP: 7fa69b42d
+Memory usage: 0.0749512
+VP: 7fa69b329
+Memory usage: 0.0751953
+VP: 7fa69b4ee
+Memory usage: 0.0754395
+VP: 7fa69b653
+Memory usage: 0.0756836
+VP: 7fa69b547
+Memory usage: 0.0759277
+VP: 7fa69b908
+Memory usage: 0.0761719
+VP: 7fa69b5ba
+Memory usage: 0.076416
+VP: 7fa69b520
+Memory usage: 0.0766602
+VP: 7fa69b6a2
+Memory usage: 0.0769043
+VP: 7fa69b4cb
+Memory usage: 0.0771484
+VP: 7fa69b93f
+Memory usage: 0.0773926
+VP: 7fa69b48c
+Memory usage: 0.0776367
+VP: 7fa69b875
+Memory usage: 0.0778809
+VP: 7fa69b7be
+Memory usage: 0.078125
+VP: 7fa69b8c1
+Memory usage: 0.0783691
+VP: 7fa69b4c4
+Memory usage: 0.0786133
+VP: 7fa69b5a7
+Memory usage: 0.0788574
+VP: 7fa69b7e9
+Memory usage: 0.0791016
+VP: 7fa69b845
+Memory usage: 0.0793457
+VP: 7fa69b809
+Memory usage: 0.0795898
+VP: 7fa69b63d
+Memory usage: 0.079834
+VP: 7fa69b1ea
+Memory usage: 0.0800781
+VP: 7fa69b41a
+Memory usage: 0.0803223
+VP: 7fa69b8e6
+Memory usage: 0.0805664
+VP: 7fa69b475
+Memory usage: 0.0808105
+VP: 7fa69b844
+Memory usage: 0.0810547
+VP: 7fa69b2cd
+Memory usage: 0.0812988
+VP: 7fa69b7c2
+Memory usage: 0.081543
+VP: 7fa69b870
+Memory usage: 0.0817871
+VP: 7fa69b2ee
+Memory usage: 0.0820312
+VP: 7fa69b6ca
+Memory usage: 0.0822754
+VP: 7fa69b66c
+Memory usage: 0.0825195
+VP: 7fa69b2b3
+Memory usage: 0.0827637
+VP: 7fa69b53a
+Memory usage: 0.0830078
+VP: 7fa69b442
+Memory usage: 0.083252
+VP: 7fa69b20c
+Memory usage: 0.0834961
+VP: 7fa69b75a
+Memory usage: 0.0837402
+VP: 7fa69b30c
+Memory usage: 0.0839844
+VP: 7fa69b756
+Memory usage: 0.0842285
+VP: 7fa69b276
+Memory usage: 0.0844727
+VP: 7fa69b23e
+Memory usage: 0.0847168
+VP: 7fa69b7ca
+Memory usage: 0.0849609
+VP: 7fa69b1f5
+Memory usage: 0.0852051
+VP: 7fa69b560
+Memory usage: 0.0854492
+VP: 7fa69b293
+Memory usage: 0.0856934
+VP: 7fa69b462
+Memory usage: 0.0859375
+VP: 7fa69b2f5
+Memory usage: 0.0861816
+VP: 7fa69b7a4
+Memory usage: 0.0864258
+VP: 7fa69b355
+Memory usage: 0.0866699
+VP: 7fa69b27b
+Memory usage: 0.0869141
+VP: 7fa69b4f1
+Memory usage: 0.0871582
+VP: 7fa69b80a
+Memory usage: 0.0874023
+VP: 7fa69b91e
+Memory usage: 0.0876465
+VP: 7fa69b814
+Memory usage: 0.0878906
+VP: 7fa69b881
+Memory usage: 0.0881348
+VP: 7fa69b2a2
+Memory usage: 0.0883789
+VP: 7fa69b1c0
+Memory usage: 0.088623
+VP: 7fa69b609
+Memory usage: 0.0888672
+VP: 7fa69b76d
+Memory usage: 0.0891113
+VP: 7fa69b4ca
+Memory usage: 0.0893555
+VP: 7fa69b464
+Memory usage: 0.0895996
+VP: 7fa69b534
+Memory usage: 0.0898438
+VP: 7fa69b512
+Memory usage: 0.0900879
+VP: 7fa69b31f
+Memory usage: 0.090332
+VP: 7fa69b287
+Memory usage: 0.0905762
+VP: 7fa69b3f4
+Memory usage: 0.0908203
+VP: 7fa69b912
+Memory usage: 0.0910645
+VP: 7fa69b8b0
+Memory usage: 0.0913086
+VP: 7fa69b640
+Memory usage: 0.0915527
+VP: 7fa69b728
+Memory usage: 0.0917969
+VP: 7fa69b39c
+Memory usage: 0.092041
+VP: 7fa69b731
+Memory usage: 0.0922852
+VP: 7fa69b440
+Memory usage: 0.0925293
+VP: 7fa69b6e8
+Memory usage: 0.0927734
+VP: 7fa69b593
+Memory usage: 0.0930176
+VP: 7fa69b5f3
+Memory usage: 0.0932617
+VP: 7fa69b865
+Memory usage: 0.0935059
+VP: 7fa69b942
+Memory usage: 0.09375
+VP: 7fa69b39b
+Memory usage: 0.0939941
+VP: 7fa69b297
+Memory usage: 0.0942383
+VP: 7fa69b2da
+Memory usage: 0.0944824
+VP: 7fa69b398
+Memory usage: 0.0947266
+VP: 7fa69b741
+Memory usage: 0.0949707
+VP: 7fa69b5b3
+Memory usage: 0.0952148
+VP: 7fa69b1f6
+Memory usage: 0.095459
+VP: 7fa69b67d
+Memory usage: 0.0957031
+VP: 7fa69b760
+Memory usage: 0.0959473
+VP: 7fa69b1ae
+Memory usage: 0.0961914
+VP: 7fa69b51a
+Memory usage: 0.0964355
+VP: 7fa69b692
+Memory usage: 0.0966797
+VP: 7fa69b662
+Memory usage: 0.0969238
+VP: 7fa69b63e
+Memory usage: 0.097168
+VP: 7fa69b7ec
+Memory usage: 0.0974121
+VP: 7fa69b451
+Memory usage: 0.0976562
+VP: 7fa69b8dd
+Memory usage: 0.0979004
+VP: 7fa69b592
+Memory usage: 0.0981445
+VP: 7fa69b299
+Memory usage: 0.0983887
+VP: 7fa69b785
+Memory usage: 0.0986328
+VP: 7fa69b8c4
+Memory usage: 0.098877
+VP: 7fa69b1bb
+Memory usage: 0.0991211
+VP: 7fa69b1dc
+Memory usage: 0.0993652
+VP: 7fa69b31c
+Memory usage: 0.0996094
+VP: 7fa69b2b1
+Memory usage: 0.0998535
+VP: 7fa69b2a6
+Memory usage: 0.100098
+VP: 7fa69b454
+Memory usage: 0.100342
+VP: 7fa69b6a0
+Memory usage: 0.100586
+VP: 7fa69b38e
+Memory usage: 0.10083
+VP: 7fa69b8b9
+Memory usage: 0.101074
+VP: 7fa69b7a0
+Memory usage: 0.101318
+VP: 7fa69b698
+Memory usage: 0.101562
+VP: 7fa69b1fa
+Memory usage: 0.101807
+VP: 7fa69b4b5
+Memory usage: 0.102051
+VP: 7fa69b5ff
+Memory usage: 0.102295
+VP: 7fa69b573
+Memory usage: 0.102539
+VP: 7fa69b50c
+Memory usage: 0.102783
+VP: 7fa69b3a0
+Memory usage: 0.103027
+VP: 7fa69b207
+Memory usage: 0.103271
+VP: 7fa69b249
+Memory usage: 0.103516
+VP: 7fa69b75d
+Memory usage: 0.10376
+VP: 7fa69b832
+Memory usage: 0.104004
+VP: 7fa69b7b3
+Memory usage: 0.104248
+VP: 7fa69b385
+Memory usage: 0.104492
+VP: 7fa69b3d4
+Memory usage: 0.104736
+VP: 7fa69b514
+Memory usage: 0.10498
+VP: 7fa69b700
+Memory usage: 0.105225
+VP: 7fa69b339
+Memory usage: 0.105469
+VP: 7fa69b82f
+Memory usage: 0.105713
+VP: 7fa69b6f1
+Memory usage: 0.105957
+VP: 7fa69b7ae
+Memory usage: 0.106201
+VP: 7fa69b59a
+Memory usage: 0.106445
+VP: 7fa69b5a6
+Memory usage: 0.106689
+VP: 7fa69b5d6
+Memory usage: 0.106934
+VP: 7fa69b7f5
+Memory usage: 0.107178
+VP: 7fa69b54d
+Memory usage: 0.107422
+VP: 7fa69b421
+Memory usage: 0.107666
+VP: 7fa69b3be
+Memory usage: 0.10791
+VP: 7fa69b1a2
+Memory usage: 0.108154
+VP: 7fa69b72d
+Memory usage: 0.108398
+VP: 7fa69b24a
+Memory usage: 0.108643
+VP: 7fa69b651
+Memory usage: 0.108887
+VP: 7fa69b774
+Memory usage: 0.109131
+VP: 7fa69b3fe
+Memory usage: 0.109375
+VP: 7fa69b273
+Memory usage: 0.109619
+VP: 7fa69b83c
+Memory usage: 0.109863
+VP: 7fa69b40a
+Memory usage: 0.110107
+VP: 7fa69b2f7
+Memory usage: 0.110352
+VP: 7fa69b433
+Memory usage: 0.110596
+VP: 7fa69b6b3
+Memory usage: 0.11084
+VP: 7fa69b6ef
+Memory usage: 0.111084
+VP: 7fa69b837
+Memory usage: 0.111328
+VP: 7fa69b53f
+Memory usage: 0.111572
+VP: 7fa69b79a
+Memory usage: 0.111816
+VP: 7fa69b63a
+Memory usage: 0.112061
+VP: 7fa69b7bf
+Memory usage: 0.112305
+VP: 7fa69b40e
+Memory usage: 0.112549
+VP: 7fa69b5a9
+Memory usage: 0.112793
+VP: 7fa69b2df
+Memory usage: 0.113037
+VP: 7fa69b8db
+Memory usage: 0.113281
+VP: 7fa69b3a6
+Memory usage: 0.113525
+VP: 7fa69b2c9
+Memory usage: 0.11377
+VP: 7fa69b855
+Memory usage: 0.114014
+VP: 7fa69b4ae
+Memory usage: 0.114258
+VP: 7fa69b4c1
+Memory usage: 0.114502
+VP: 7fa69b87f
+Memory usage: 0.114746
+VP: 7fa69b277
+Memory usage: 0.11499
+VP: 7fa69b89d
+Memory usage: 0.115234
+VP: 7fa69b33a
+Memory usage: 0.115479
+VP: 7fa69b3b2
+Memory usage: 0.115723
+VP: 7fa69b3c6
+Memory usage: 0.115967
+VP: 7fa69b71f
+Memory usage: 0.116211
+VP: 7fa69b4a3
+Memory usage: 0.116455
+VP: 7fa69b62f
+Memory usage: 0.116699
+VP: 7fa69b461
+Memory usage: 0.116943
+VP: 7fa69b1b0
+Memory usage: 0.117188
+VP: 7fa69b8ea
+Memory usage: 0.117432
+VP: 7fa69b922
+Memory usage: 0.117676
+VP: 7fa69b236
+Memory usage: 0.11792
+VP: 7fa69b1d0
+Memory usage: 0.118164
+VP: 7fa69b6ce
+Memory usage: 0.118408
+VP: 7fa69b529
+Memory usage: 0.118652
+VP: 7fa69b634
+Memory usage: 0.118896
+VP: 7fa69b5be
+Memory usage: 0.119141
+VP: 7fa69b388
+Memory usage: 0.119385
+VP: 7fa69b772
+Memory usage: 0.119629
+VP: 7fa69b58d
+Memory usage: 0.119873
+VP: 7fa69b1d9
+Memory usage: 0.120117
+VP: 7fa69b876
+Memory usage: 0.120361
+VP: 7fa69b6de
+Memory usage: 0.120605
+VP: 7fa69b5ed
+Memory usage: 0.12085
+VP: 7fa69b20a
+Memory usage: 0.121094
+VP: 7fa69b740
+Memory usage: 0.121338
+VP: 7fa69b41b
+Memory usage: 0.121582
+VP: 7fa69b93a
+Memory usage: 0.121826
+VP: 7fa69b71d
+Memory usage: 0.12207
+VP: 7fa69b458
+Memory usage: 0.122314
+VP: 7fa69b923
+Memory usage: 0.122559
+VP: 7fa69b884
+Memory usage: 0.122803
+VP: 7fa69b3ff
+Memory usage: 0.123047
+VP: 7fa69b899
+Memory usage: 0.123291
+VP: 7fa69b862
+Memory usage: 0.123535
+VP: 7fa69b494
+Memory usage: 0.123779
+VP: 7fa69b604
+Memory usage: 0.124023
+VP: 7fa69b2e8
+Memory usage: 0.124268
+VP: 7fa69b418
+Memory usage: 0.124512
+VP: 7fa69b3e3
+Memory usage: 0.124756
+VP: 7fa69b77b
+Memory usage: 0.125
+VP: 7fa69b835
+Memory usage: 0.125244
+VP: 7fa69b5ab
+Memory usage: 0.125488
+VP: 7fa69b641
+Memory usage: 0.125732
+VP: 7fa69b40c
+Memory usage: 0.125977
+VP: 7fa69b7db
+Memory usage: 0.126221
+VP: 7fa69b902
+Memory usage: 0.126465
+VP: 7fa69b60f
+Memory usage: 0.126709
+VP: 7fa69b205
+Memory usage: 0.126953
+VP: 7fa69b42e
+Memory usage: 0.127197
+VP: 7fa69b1fc
+Memory usage: 0.127441
+VP: 7fa69b335
+Memory usage: 0.127686
+VP: 7fa69b261
+Memory usage: 0.12793
+VP: 7fa69b35f
+Memory usage: 0.128174
+VP: 7fa69b3b0
+Memory usage: 0.128418
+VP: 7fa69b84a
+Memory usage: 0.128662
+VP: 7fa69b26a
+Memory usage: 0.128906
+VP: 7fa69b6cd
+Memory usage: 0.12915
+VP: 7fa69b320
+Memory usage: 0.129395
+VP: 7fa69b4ab
+Memory usage: 0.129639
+VP: 7fa69b366
+Memory usage: 0.129883
+VP: 7fa69b300
+Memory usage: 0.130127
+VP: 7fa69b594
+Memory usage: 0.130371
+VP: 7fa69b3f6
+Memory usage: 0.130615
+VP: 7fa69b322
+Memory usage: 0.130859
+VP: 7fa69b74c
+Memory usage: 0.131104
+VP: 7fa69b78f
+Memory usage: 0.131348
+VP: 7fa69b65d
+Memory usage: 0.131592
+VP: 7fa69b259
+Memory usage: 0.131836
+VP: 7fa69b7f0
+Memory usage: 0.13208
+VP: 7fa69b1c2
+Memory usage: 0.132324
+VP: 7fa69b84b
+Memory usage: 0.132568
+VP: 7fa69b2a1
+Memory usage: 0.132812
+VP: 7fa69b871
+Memory usage: 0.133057
+VP: 7fa69b7ab
+Memory usage: 0.133301
+VP: 7fa69b559
+Memory usage: 0.133545
+VP: 7fa69b1c8
+Memory usage: 0.133789
+VP: 7fa69b781
+Memory usage: 0.134033
+VP: 7fa69b446
+Memory usage: 0.134277
+VP: 7fa69b2c6
+Memory usage: 0.134521
+VP: 7fa69b719
+Memory usage: 0.134766
+VP: 7fa69b683
+Memory usage: 0.13501
+VP: 7fa69b265
+Memory usage: 0.135254
+VP: 7fa69b563
+Memory usage: 0.135498
+VP: 7fa69b8d7
+Memory usage: 0.135742
+VP: 7fa69b3e5
+Memory usage: 0.135986
+VP: 7fa69b1b5
+Memory usage: 0.13623
+VP: 7fa69b75f
+Memory usage: 0.136475
+VP: 7fa69b869
+Memory usage: 0.136719
+VP: 7fa69b6d9
+Memory usage: 0.136963
+VP: 7fa69b805
+Memory usage: 0.137207
+VP: 7fa69b88a
+Memory usage: 0.137451
+VP: 7fa69b70d
+Memory usage: 0.137695
+VP: 7fa69b3e0
+Memory usage: 0.137939
+VP: 7fa69b59b
+Memory usage: 0.138184
+VP: 7fa69b76e
+Memory usage: 0.138428
+VP: 7fa69b798
+Memory usage: 0.138672
+VP: 7fa69b1ed
+Memory usage: 0.138916
+VP: 7fa69b794
+Memory usage: 0.13916
+VP: 7fa69b224
+Memory usage: 0.139404
+VP: 7fa69b6c2
+Memory usage: 0.139648
+VP: 7fa69b89c
+Memory usage: 0.139893
+VP: 7fa69b786
+Memory usage: 0.140137
+VP: 7fa69b3bd
+Memory usage: 0.140381
+VP: 7fa69b8ab
+Memory usage: 0.140625
+VP: 7fa69b8ca
+Memory usage: 0.140869
+VP: 7fa69b6b1
+Memory usage: 0.141113
+VP: 7fa69b5eb
+Memory usage: 0.141357
+VP: 7fa69b2d2
+Memory usage: 0.141602
+VP: 7fa69b628
+Memory usage: 0.141846
+VP: 7fa69b49d
+Memory usage: 0.14209
+VP: 7fa69b8b1
+Memory usage: 0.142334
+VP: 7fa69b840
+Memory usage: 0.142578
+VP: 7fa69b5f9
+Memory usage: 0.142822
+VP: 7fa69b371
+Memory usage: 0.143066
+VP: 7fa69b338
+Memory usage: 0.143311
+VP: 7fa69b838
+Memory usage: 0.143555
+VP: 7fa69b904
+Memory usage: 0.143799
+VP: 7fa69b20d
+Memory usage: 0.144043
+VP: 7fa69b1ac
+Memory usage: 0.144287
+VP: 7fa69b6f9
+Memory usage: 0.144531
+VP: 7fa69b488
+Memory usage: 0.144775
+VP: 7fa69b8c5
+Memory usage: 0.14502
+VP: 7fa69b2cc
+Memory usage: 0.145264
+VP: 7fa69b340
+Memory usage: 0.145508
+VP: 7fa69b5ea
+Memory usage: 0.145752
+VP: 7fa69b42c
+Memory usage: 0.145996
+VP: 7fa69b2c7
+Memory usage: 0.14624
+VP: 7fa69b358
+Memory usage: 0.146484
+VP: 7fa69b50b
+Memory usage: 0.146729
+VP: 7fa69b681
+Memory usage: 0.146973
+VP: 7fa69b8a3
+Memory usage: 0.147217
+VP: 7fa69b3e8
+Memory usage: 0.147461
+VP: 7fa69b6ec
+Memory usage: 0.147705
+VP: 7fa69b54f
+Memory usage: 0.147949
+VP: 7fa69b45c
+Memory usage: 0.148193
+VP: 7fa69b44c
+Memory usage: 0.148438
+VP: 7fa69b30d
+Memory usage: 0.148682
+VP: 7fa69b30a
+Memory usage: 0.148926
+VP: 7fa69b69c
+Memory usage: 0.14917
+VP: 7fa69b33b
+Memory usage: 0.149414
+VP: 7fa69b860
+Memory usage: 0.149658
+VP: 7fa69b2ea
+Memory usage: 0.149902
+VP: 7fa69b5dd
+Memory usage: 0.150146
+VP: 7fa69b7e2
+Memory usage: 0.150391
+VP: 7fa69b1f2
+Memory usage: 0.150635
+VP: 7fa69b707
+Memory usage: 0.150879
+VP: 7fa69b1df
+Memory usage: 0.151123
+VP: 7fa69b1f1
+Memory usage: 0.151367
+VP: 7fa69b4fd
+Memory usage: 0.151611
+VP: 7fa69b2bd
+Memory usage: 0.151855
+VP: 7fa69b91f
+Memory usage: 0.1521
+VP: 7fa69b21e
+Memory usage: 0.152344
+VP: 7fa69b309
+Memory usage: 0.152588
+VP: 7fa69b6d1
+Memory usage: 0.152832
+VP: 7fa69b291
+Memory usage: 0.153076
+VP: 7fa69b67c
+Memory usage: 0.15332
+VP: 7fa69b406
+Memory usage: 0.153564
+VP: 7fa69b4e8
+Memory usage: 0.153809
+VP: 7fa69b56d
+Memory usage: 0.154053
+VP: 7fa69b319
+Memory usage: 0.154297
+VP: 7fa69b87a
+Memory usage: 0.154541
+VP: 7fa69b555
+Memory usage: 0.154785
+VP: 7fa69b2ce
+Memory usage: 0.155029
+VP: 7fa69b511
+Memory usage: 0.155273
+VP: 7fa69b30b
+Memory usage: 0.155518
+VP: 7fa69b552
+Memory usage: 0.155762
+VP: 7fa69b561
+Memory usage: 0.156006
+VP: 7fa69b667
+Memory usage: 0.15625
+VP: 7fa69b1da
+Memory usage: 0.156494
+VP: 7fa69b53c
+Memory usage: 0.156738
+VP: 7fa69b62b
+Memory usage: 0.156982
+VP: 7fa69b67b
+Memory usage: 0.157227
+VP: 7fa69b7d2
+Memory usage: 0.157471
+VP: 7fa69b409
+Memory usage: 0.157715
+VP: 7fa69b704
+Memory usage: 0.157959
+VP: 7fa69b53d
+Memory usage: 0.158203
+VP: 7fa69b4f9
+Memory usage: 0.158447
+VP: 7fa69b43e
+Memory usage: 0.158691
+VP: 7fa69b296
+Memory usage: 0.158936
+VP: 7fa69b568
+Memory usage: 0.15918
+VP: 7fa69b3c5
+Memory usage: 0.159424
+VP: 7fa69b5fc
+Memory usage: 0.159668
+VP: 7fa69b58c
+Memory usage: 0.159912
+VP: 7fa69b729
+Memory usage: 0.160156
+VP: 7fa69b35d
+Memory usage: 0.1604
+VP: 7fa69b8fc
+Memory usage: 0.160645
+VP: 7fa69b2e9
+Memory usage: 0.160889
+VP: 7fa69b906
+Memory usage: 0.161133
+VP: 7fa69b206
+Memory usage: 0.161377
+VP: 7fa69b6a3
+Memory usage: 0.161621
+VP: 7fa69b836
+Memory usage: 0.161865
+VP: 7fa69b907
+Memory usage: 0.162109
+VP: 7fa69b7d1
+Memory usage: 0.162354
+VP: 7fa69b51f
+Memory usage: 0.162598
+VP: 7fa69b72a
+Memory usage: 0.162842
+VP: 7fa69b2fe
+Memory usage: 0.163086
+VP: 7fa69b4ec
+Memory usage: 0.16333
+VP: 7fa69b84d
+Memory usage: 0.163574
+VP: 7fa69b788
+Memory usage: 0.163818
+VP: 7fa69b5e9
+Memory usage: 0.164062
+VP: 7fa69b847
+Memory usage: 0.164307
+VP: 7fa69b20e
+Memory usage: 0.164551
+VP: 7fa69b5bd
+Memory usage: 0.164795
+VP: 7fa69b4b0
+Memory usage: 0.165039
+VP: 7fa69b4c7
+Memory usage: 0.165283
+VP: 7fa69b647
+Memory usage: 0.165527
+VP: 7fa69b864
+Memory usage: 0.165771
+VP: 7fa69b480
+Memory usage: 0.166016
+VP: 7fa69b826
+Memory usage: 0.16626
+VP: 7fa69b250
+Memory usage: 0.166504
+VP: 7fa69b24b
+Memory usage: 0.166748
+VP: 7fa69b88f
+Memory usage: 0.166992
+VP: 7fa69b751
+Memory usage: 0.167236
+VP: 7fa69b90d
+Memory usage: 0.16748
+VP: 7fa69b917
+Memory usage: 0.167725
+VP: 7fa69b750
+Memory usage: 0.167969
+VP: 7fa69b802
+Memory usage: 0.168213
+VP: 7fa69b6ff
+Memory usage: 0.168457
+VP: 7fa69b5ac
+Memory usage: 0.168701
+VP: 7fa69b4a0
+Memory usage: 0.168945
+VP: 7fa69b2e6
+Memory usage: 0.169189
+VP: 7fa69b44a
+Memory usage: 0.169434
+VP: 7fa69b2bf
+Memory usage: 0.169678
+VP: 7fa69b6ae
+Memory usage: 0.169922
+VP: 7fa69b8d2
+Memory usage: 0.170166
+VP: 7fa69b3d5
+Memory usage: 0.17041
+VP: 7fa69b644
+Memory usage: 0.170654
+VP: 7fa69b2d1
+Memory usage: 0.170898
+VP: 7fa69b558
+Memory usage: 0.171143
+VP: 7fa69b316
+Memory usage: 0.171387
+VP: 7fa69b635
+Memory usage: 0.171631
+VP: 7fa69b3bf
+Memory usage: 0.171875
+VP: 7fa69b581
+Memory usage: 0.172119
+VP: 7fa69b7b2
+Memory usage: 0.172363
+VP: 7fa69b201
+Memory usage: 0.172607
+VP: 7fa69b5c0
+Memory usage: 0.172852
+VP: 7fa69b861
+Memory usage: 0.173096
+VP: 7fa69b48d
+Memory usage: 0.17334
+VP: 7fa69b229
+Memory usage: 0.173584
+VP: 7fa69b87c
+Memory usage: 0.173828
+VP: 7fa69b78c
+Memory usage: 0.174072
+VP: 7fa69b282
+Memory usage: 0.174316
+VP: 7fa69b327
+Memory usage: 0.174561
+VP: 7fa69b569
+Memory usage: 0.174805
+VP: 7fa69b48f
+Memory usage: 0.175049
+VP: 7fa69b697
+Memory usage: 0.175293
+VP: 7fa69b6e6
+Memory usage: 0.175537
+VP: 7fa69b8ba
+Memory usage: 0.175781
+VP: 7fa69b5e0
+Memory usage: 0.176025
+VP: 7fa69b441
+Memory usage: 0.17627
+VP: 7fa69b743
+Memory usage: 0.176514
+VP: 7fa69b5b5
+Memory usage: 0.176758
+VP: 7fa69b62d
+Memory usage: 0.177002
+VP: 7fa69b22a
+Memory usage: 0.177246
+VP: 7fa69b392
+Memory usage: 0.17749
+VP: 7fa69b7ff
+Memory usage: 0.177734
+VP: 7fa69b3c9
+Memory usage: 0.177979
+VP: 7fa69b841
+Memory usage: 0.178223
+VP: 7fa69b633
+Memory usage: 0.178467
+VP: 7fa69b482
+Memory usage: 0.178711
+VP: 7fa69b1ff
+Memory usage: 0.178955
+VP: 7fa69b7e5
+Memory usage: 0.179199
+VP: 7fa69b1c6
+Memory usage: 0.179443
+VP: 7fa69b6f4
+Memory usage: 0.179688
+VP: 7fa69b780
+Memory usage: 0.179932
+VP: 7fa69b41d
+Memory usage: 0.180176
+VP: 7fa69b5d5
+Memory usage: 0.18042
+VP: 7fa69b248
+Memory usage: 0.180664
+VP: 7fa69b5c1
+Memory usage: 0.180908
+VP: 7fa69b390
+Memory usage: 0.181152
+VP: 7fa69b4c9
+Memory usage: 0.181396
+VP: 7fa69b522
+Memory usage: 0.181641
+VP: 7fa69b40d
+Memory usage: 0.181885
+VP: 7fa69b713
+Memory usage: 0.182129
+VP: 7fa69b67e
+Memory usage: 0.182373
+VP: 7fa69b3b4
+Memory usage: 0.182617
+VP: 7fa69b279
+Memory usage: 0.182861
+VP: 7fa69b733
+Memory usage: 0.183105
+VP: 7fa69b5db
+Memory usage: 0.18335
+VP: 7fa69b82a
+Memory usage: 0.183594
+VP: 7fa69b1aa
+Memory usage: 0.183838
+VP: 7fa69b305
+Memory usage: 0.184082
+VP: 7fa69b813
+Memory usage: 0.184326
+VP: 7fa69b400
+Memory usage: 0.18457
+VP: 7fa69b39f
+Memory usage: 0.184814
+VP: 7fa69b3aa
+Memory usage: 0.185059
+VP: 7fa69b1dd
+Memory usage: 0.185303
+VP: 7fa69b346
+Memory usage: 0.185547
+VP: 7fa69b4d3
+Memory usage: 0.185791
+VP: 7fa69b93b
+Memory usage: 0.186035
+VP: 7fa69b8fd
+Memory usage: 0.186279
+VP: 7fa69b389
+Memory usage: 0.186523
+VP: 7fa69b709
+Memory usage: 0.186768
+VP: 7fa69b6ee
+Memory usage: 0.187012
+VP: 7fa69b6d2
+Memory usage: 0.187256
+VP: 7fa69b7a9
+Memory usage: 0.1875
+VP: 7fa69b312
+Memory usage: 0.187744
+VP: 7fa69b1e8
+Memory usage: 0.187988
+VP: 7fa69b381
+Memory usage: 0.188232
+VP: 7fa69b35c
+Memory usage: 0.188477
+VP: 7fa69b1d8
+Memory usage: 0.188721
+VP: 7fa69b55a
+Memory usage: 0.188965
+VP: 7fa69b33f
+Memory usage: 0.189209
+VP: 7fa69b3e1
+Memory usage: 0.189453
+VP: 7fa69b78e
+Memory usage: 0.189697
+VP: 7fa69b585
+Memory usage: 0.189941
+VP: 7fa69b694
+Memory usage: 0.190186
+VP: 7fa69b2cb
+Memory usage: 0.19043
+VP: 7fa69b770
+Memory usage: 0.190674
+VP: 7fa69b796
+Memory usage: 0.190918
+VP: 7fa69b739
+Memory usage: 0.191162
+VP: 7fa69b7ba
+Memory usage: 0.191406
+VP: 7fa69b8ef
+Memory usage: 0.19165
+VP: 7fa69b90a
+Memory usage: 0.191895
+VP: 7fa69b936
+Memory usage: 0.192139
+VP: 7fa69b1f8
+Memory usage: 0.192383
+VP: 7fa69b3b9
+Memory usage: 0.192627
+VP: 7fa69b771
+Memory usage: 0.192871
+VP: 7fa69b816
+Memory usage: 0.193115
+VP: 7fa69b7a7
+Memory usage: 0.193359
+VP: 7fa69b383
+Memory usage: 0.193604
+VP: 7fa69b829
+Memory usage: 0.193848
+VP: 7fa69b821
+Memory usage: 0.194092
+VP: 7fa69b310
+Memory usage: 0.194336
+VP: 7fa69b3bb
+Memory usage: 0.19458
+VP: 7fa69b1ec
+Memory usage: 0.194824
+VP: 7fa69a9f6
+Memory usage: 0.195068
+VP: 7fa69b6f8
+Memory usage: 0.195312
+VP: 7fa69b37d
+Memory usage: 0.195557
+VP: 7fa69b4d6
+Memory usage: 0.195801
+VP: 7fa69b74f
+Memory usage: 0.196045
+VP: 7fa69b2dd
+Memory usage: 0.196289
+VP: 7fa69b1b4
+Memory usage: 0.196533
+VP: 7fa69b1be
+Memory usage: 0.196777
+VP: 7fa69b2fd
+Memory usage: 0.197021
+VP: 7fa69b231
+Memory usage: 0.197266
+VP: 7fa69b3c8
+Memory usage: 0.19751
+VP: 7fa69b3df
+Memory usage: 0.197754
+VP: 7fa69b8da
+Memory usage: 0.197998
+VP: 7fa69b518
+Memory usage: 0.198242
+VP: 7fa69b210
+Memory usage: 0.198486
+VP: 7fa69b1ca
+Memory usage: 0.19873
+VP: 7fa69b929
+Memory usage: 0.198975
+VP: 7fa69b25a
+Memory usage: 0.199219
+VP: 7fa69b68f
+Memory usage: 0.199463
+VP: 7fa69b208
+Memory usage: 0.199707
+VP: 7fa69b456
+Memory usage: 0.199951
+VP: 7fa69b222
+Memory usage: 0.200195
+VP: 7fa69b71a
+Memory usage: 0.200439
+VP: 7fa69b226
+Memory usage: 0.200684
+VP: 7fa69b599
+Memory usage: 0.200928
+VP: 7fa69b2ad
+Memory usage: 0.201172
+VP: 7fa69b611
+Memory usage: 0.201416
+VP: 7fa69b5af
+Memory usage: 0.20166
+VP: 7fa69b32f
+Memory usage: 0.201904
+VP: 7fa69b69b
+Memory usage: 0.202148
+VP: 7fa69b526
+Memory usage: 0.202393
+VP: 7fa69b82b
+Memory usage: 0.202637
+VP: 7fa69b2f3
+Memory usage: 0.202881
+VP: 7fa69b89a
+Memory usage: 0.203125
+VP: 7fa69b44f
+Memory usage: 0.203369
+VP: 7fa69b528
+Memory usage: 0.203613
+VP: 7fa69b7c8
+Memory usage: 0.203857
+VP: 7fa69b410
+Memory usage: 0.204102
+VP: 7fa69b234
+Memory usage: 0.204346
+VP: 7fa69b29f
+Memory usage: 0.20459
+VP: 7fa69b46f
+Memory usage: 0.204834
+VP: 7fa69b7ad
+Memory usage: 0.205078
+VP: 7fa69b324
+Memory usage: 0.205322
+VP: 7fa69b866
+Memory usage: 0.205566
+VP: 7fa69b30f
+Memory usage: 0.205811
+VP: 7fa69b2fa
+Memory usage: 0.206055
+VP: 7fa69b203
+Memory usage: 0.206299
+VP: 7fa69b42b
+Memory usage: 0.206543
+VP: 7fa69b7b0
+Memory usage: 0.206787
+VP: 7fa69b5d3
+Memory usage: 0.207031
+VP: 7fa69b642
+Memory usage: 0.207275
+VP: 7fa69b2ae
+Memory usage: 0.20752
+VP: 7fa69b257
+Memory usage: 0.207764
+VP: 7fa69b588
+Memory usage: 0.208008
+VP: 7fa69b7a1
+Memory usage: 0.208252
+VP: 7fa69b532
+Memory usage: 0.208496
+VP: 7fa69b605
+Memory usage: 0.20874
+VP: 7fa69b5c4
+Memory usage: 0.208984
+VP: 7fa69b702
+Memory usage: 0.209229
+VP: 7fa69b734
+Memory usage: 0.209473
+VP: 7fa69b59c
+Memory usage: 0.209717
+VP: 7fa69b27e
+Memory usage: 0.209961
+VP: 7fa69b691
+Memory usage: 0.210205
+VP: 7fa69b4d7
+Memory usage: 0.210449
+VP: 7fa69b21c
+Memory usage: 0.210693
+VP: 7fa69b3a4
+Memory usage: 0.210938
+VP: 7fa69b610
+Memory usage: 0.211182
+VP: 7fa69b307
+Memory usage: 0.211426
+VP: 7fa69b655
+Memory usage: 0.21167
+VP: 7fa69b915
+Memory usage: 0.211914
+VP: 7fa69b5b4
+Memory usage: 0.212158
+VP: 7fa69b4a4
+Memory usage: 0.212402
+VP: 7fa69b727
+Memory usage: 0.212646
+VP: 7fa69b303
+Memory usage: 0.212891
+VP: 7fa69b315
+Memory usage: 0.213135
+VP: 7fa69b5c8
+Memory usage: 0.213379
+VP: 7fa69b738
+Memory usage: 0.213623
+VP: 7fa69b80d
+Memory usage: 0.213867
+VP: 7fa69b41c
+Memory usage: 0.214111
+VP: 7fa69b1a7
+Memory usage: 0.214355
+VP: 7fa69b2c8
+------------------------------------------------------------
+Segmentation fault. Access Address = (nil)
+
+Backtrace:
+    ??:??:0
+    new_allocator.h:__gnu_cxx::new_allocator<std::_List_node<unsigned long> >::deallocate:128
+    page_table.cc:ParametricDramDirectoryMSI::PageTable::insertPage:50
+    tlb.cc:ParametricDramDirectoryMSI::TLB::lookup:61
+    memory_manager.cc:ParametricDramDirectoryMSI::MemoryManager::accessTLB:621
+    memory_manager.cc:ParametricDramDirectoryMSI::MemoryManager::coreInitiateMemoryAccess:450
+    core.cc:Core::initiateMemoryAccess:365
+    core.cc:Core::accessMemory:482
+    dynamic_instruction.cc:DynamicInstruction::accessMemory:60 (discriminator 4)
+    oneipc_performance_model.cc:OneIPCPerformanceModel::handleInstruction:47
+    performance_model.cc:PerformanceModel::iterate:311
+    trace_thread.cc:TraceThread::run:834
+    pthread_thread.cc:PthreadThread::spawnedThreadFunc:21
+    ??:??:0
+------------------------------------------------------------
+[SNIPER] End
+[SNIPER] Elapsed time: 3.26 seconds

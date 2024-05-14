@@ -69,22 +69,29 @@ MemoryManager::MemoryManager(Core* core,
    {
       m_page_table = new PageTable(Sim()->getCfg()->getInt("tfg/dario/memoria") * 1024 * 1024, core->getId());
       m_cache_block_size = Sim()->getCfg()->getInt("perf_model/l1_icache/cache_block_size");
-      pageStats =  new PageStats(Sim()->getCfg()->getBool("tfg/dario/conteo_uso_paginas"), getCore()->getId());
+      pageStats =  new PageStats(Sim()->getCfg()->getBool("tfg/dario/conteo_uso_paginas"), getCore()->getId(), tipoSistema);
       m_last_level_cache = (MemComponent::component_t)(Sim()->getCfg()->getInt("perf_model/cache/levels") - 2 + MemComponent::L2_CACHE);
 
       UInt32 stlb_size = Sim()->getCfg()->getInt("perf_model/stlb/size");
-      if (stlb_size)
-         m_stlb = new TLB("stlb", "perf_model/stlb", getCore()->getId(), stlb_size, Sim()->getCfg()->getInt("perf_model/stlb/associativity"), NULL, NULL, m_page_table);
+      if (stlb_size){
+         m_stlb = new TLB("stlb", "perf_model/stlb", getCore()->getId(), stlb_size, Sim()->getCfg()->getInt("perf_model/stlb/associativity"), NULL, NULL, m_page_table, NULL, SIM_PAGE_SIZE);
+         m_stlb_2mb = new TLB("stlb_2mb", "perf_model/stlb", getCore()->getId(), stlb_size, Sim()->getCfg()->getInt("perf_model/stlb/associativity"), NULL, NULL, m_page_table, NULL, SIM_PAGE_SIZE_2MB);
+      }
       UInt32 itlb_size = Sim()->getCfg()->getInt("perf_model/itlb/size");
       if (itlb_size)
-         m_itlb = new TLB("itlb", "perf_model/itlb", getCore()->getId(), itlb_size, Sim()->getCfg()->getInt("perf_model/itlb/associativity"), m_stlb, NULL, NULL);
+         m_itlb = new TLB("itlb", "perf_model/itlb", getCore()->getId(), itlb_size, Sim()->getCfg()->getInt("perf_model/itlb/associativity"), m_stlb, NULL, NULL, NULL, SIM_PAGE_SIZE);
       UInt32 dtlb_size = Sim()->getCfg()->getInt("perf_model/dtlb/size");
       if (dtlb_size){
-         m_dtlb_2mb = new TLB("dtlb2mb", "perf_model/dtlb", getCore()->getId(), dtlb_size, Sim()->getCfg()->getInt("perf_model/dtlb/associativity"), m_stlb, NULL,  m_page_table);
-         m_dtlb = new TLB("dtlb", "perf_model/dtlb", getCore()->getId(), dtlb_size, Sim()->getCfg()->getInt("perf_model/dtlb/associativity"), m_stlb,  m_dtlb_2mb, m_page_table);
+         m_dtlb_2mb = new TLB("dtlb_2mb", "perf_model/dtlb", getCore()->getId(), dtlb_size, Sim()->getCfg()->getInt("perf_model/dtlb/associativity"), m_stlb_2mb, NULL,  m_page_table, pageStats, SIM_PAGE_SIZE_2MB);
+         m_dtlb = new TLB("dtlb", "perf_model/dtlb", getCore()->getId(), dtlb_size, Sim()->getCfg()->getInt("perf_model/dtlb/associativity"), m_stlb,  m_dtlb_2mb, m_page_table, pageStats, SIM_PAGE_SIZE);
       }
       m_tlb_miss_penalty = ComponentLatency(core->getDvfsDomain(), Sim()->getCfg()->getInt("perf_model/tlb/penalty"));
       m_tlb_miss_parallel = Sim()->getCfg()->getBool("perf_model/tlb/penalty_parallel");
+
+      m_page_table->addTLB(m_dtlb);
+      m_page_table->addTLB(m_dtlb_2mb);
+      m_page_table->addTLB(m_stlb);
+      m_page_table->addTLB(m_stlb_2mb);
 
       smt_cores = Sim()->getCfg()->getInt("perf_model/core/logical_cpus");
 
